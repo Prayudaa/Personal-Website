@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-display: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --color-bg: #fbf7f4;
+  --color-navy: #2945a2;
+  --color-navy-dark: #0f1b3d;
+  --color-glass: rgba(255, 255, 255, 0.55);
+  --color-glass-border: rgba(255, 255, 255, 0.6);
+  --color-accent-light: #8ca0d9;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-navy: var(--color-navy);
+  --color-navy-dark: var(--color-navy-dark);
+  --color-accent-light: var(--color-accent-light);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-navy-dark);
+  font-family: var(--font-body), sans-serif;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+}
+
+/* Gradient mesh background — dasar supaya efek glass terlihat */
+.mesh-bg {
+  position: relative;
+  isolation: isolate;
+}
+
+.mesh-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 600px 400px at 15% 20%, rgba(41, 69, 162, 0.16), transparent 60%),
+    radial-gradient(ellipse 500px 500px at 85% 60%, rgba(140, 160, 217, 0.22), transparent 60%),
+    radial-gradient(ellipse 700px 400px at 50% 100%, rgba(41, 69, 162, 0.08), transparent 60%);
+}
+
+/* Glassmorphism signature card */
+.glass-card {
+  background: var(--color-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: 0 8px 32px rgba(15, 27, 61, 0.08), 0 1px 2px rgba(15, 27, 61, 0.04);
+}
+
+.glass-card-solid {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px rgba(15, 27, 61, 0.1);
+}
+
+.glass-nav {
+  background: rgba(251, 247, 244, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(41, 69, 162, 0.1);
+}
+
+.glass-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.glass-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(15, 27, 61, 0.14);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass-hover {
+    transition: none;
+  }
+  .glass-hover:hover {
+    transform: none;
+  }
+}

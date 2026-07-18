@@ -1,0 +1,78 @@
+import { Check } from "lucide-react";
+import { SERVICES, WHATSAPP_LINK } from "@/lib/data";
+
+export default function Services() {
+  return (
+    <section id="layanan" className="mesh-bg py-16 md:py-24">
+      <div className="mx-auto max-w-6xl px-5 md:px-8">
+        <h2 className="font-display font-bold text-3xl md:text-4xl mb-3 text-navy-dark">
+          Layanan
+        </h2>
+        <p className="text-navy-dark/70 max-w-lg mb-10">
+          Pilih paket sesuai kebutuhan, atau diskusikan langsung kalau
+          kebutuhan kamu spesifik.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-6 items-stretch">
+          {SERVICES.map((service) => (
+            <div
+              key={service.name}
+              className={`rounded-3xl p-6 flex flex-col ${
+                service.highlight
+                  ? "bg-navy text-bg shadow-xl shadow-navy/30 md:-translate-y-3"
+                  : "glass-card text-navy-dark"
+              }`}
+            >
+              {service.highlight && (
+                <span className="self-start bg-accent-light text-navy-dark text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                  Paling Diminati
+                </span>
+              )}
+              <h3 className="font-display font-bold text-2xl mb-1">
+                {service.name}
+              </h3>
+              <p
+                className={`text-sm mb-4 ${
+                  service.highlight ? "text-bg/75" : "text-navy-dark/65"
+                }`}
+              >
+                {service.desc}
+              </p>
+              <div className="font-display font-bold text-lg mb-5">
+                {service.price}
+              </div>
+
+              <ul className="space-y-2.5 flex-1 mb-6">
+                {service.features.map((feature) => (
+                  <li key={feature} className="flex items-start gap-2 text-sm">
+                    <Check
+                      size={18}
+                      strokeWidth={2.5}
+                      className={`shrink-0 mt-0.5 ${
+                        service.highlight ? "text-accent-light" : "text-navy"
+                      }`}
+                    />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`glass-hover text-center font-display font-semibold px-5 py-3 rounded-full text-sm ${
+                  service.highlight
+                    ? "bg-bg text-navy-dark"
+                    : "bg-navy text-bg"
+                }`}
+              >
+                Tanya Paket Ini
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
