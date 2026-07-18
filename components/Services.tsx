@@ -1,28 +1,33 @@
 import { Check } from "lucide-react";
 import { SERVICES, WHATSAPP_LINK } from "@/lib/data";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Services() {
   return (
     <section id="layanan" className="mesh-bg py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <h2 className="font-display font-bold text-3xl md:text-4xl mb-3 text-navy-dark">
-          Layanan
-        </h2>
-        <p className="text-navy-dark/70 max-w-lg mb-10">
-          Pilih paket sesuai kebutuhan, atau diskusikan langsung kalau
-          kebutuhan kamu spesifik.
-        </p>
+        <RevealOnScroll>
+          <h2 className="font-display font-bold text-3xl md:text-4xl mb-3 text-navy-dark">
+            Layanan
+          </h2>
+        </RevealOnScroll>
+        <RevealOnScroll delay={120}>
+          <p className="text-navy-dark/70 max-w-lg mb-10">
+            Pilih paket sesuai kebutuhan, atau diskusikan langsung kalau
+            kebutuhan kamu spesifik.
+          </p>
+        </RevealOnScroll>
 
         <div className="grid md:grid-cols-3 gap-6 items-stretch">
-          {SERVICES.map((service) => (
-            <div
-              key={service.name}
-              className={`rounded-3xl p-6 flex flex-col ${
-                service.highlight
-                  ? "bg-navy text-bg shadow-xl shadow-navy/30 md:-translate-y-3"
-                  : "glass-card text-navy-dark"
-              }`}
-            >
+          {SERVICES.map((service, index) => (
+            <RevealOnScroll key={service.name} delay={index * 100}>
+              <div
+                className={`rounded-3xl p-6 flex flex-col h-full ${
+                  service.highlight
+                    ? "bg-navy text-bg shadow-xl shadow-navy/30 md:-translate-y-3"
+                    : "glass-card text-navy-dark"
+                }`}
+              >
               {service.highlight && (
                 <span className="self-start bg-accent-light text-navy-dark text-xs font-semibold px-3 py-1 rounded-full mb-3">
                   Paling Diminati
@@ -57,19 +62,20 @@ export default function Services() {
                 ))}
               </ul>
 
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`glass-hover text-center font-display font-semibold px-5 py-3 rounded-full text-sm ${
-                  service.highlight
-                    ? "bg-bg text-navy-dark"
-                    : "bg-navy text-bg"
-                }`}
-              >
-                Tanya Paket Ini
-              </a>
-            </div>
+                <a
+                  href={WHATSAPP_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`glass-hover text-center font-display font-semibold px-5 py-3 rounded-full text-sm ${
+                    service.highlight
+                      ? "bg-bg text-navy-dark"
+                      : "bg-navy text-bg"
+                  }`}
+                >
+                  Tanya Paket Ini
+                </a>
+              </div>
+            </RevealOnScroll>
           ))}
         </div>
       </div>

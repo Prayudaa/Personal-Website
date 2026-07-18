@@ -1,4 +1,5 @@
 import { BENEFITS } from "@/lib/data";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid md:grid-cols-[280px_1fr] gap-10 md:gap-14 items-start">
           {/* Foto */}
-          <div className="mx-auto md:mx-0">
+          <RevealOnScroll className="mx-auto md:mx-0">
             <div className="glass-card w-56 h-56 md:w-64 md:h-64 rounded-3xl flex items-center justify-center">
               <span className="text-navy-dark/40 text-sm text-center px-4 font-medium">
                 Foto Prayuda
@@ -14,37 +15,40 @@ export default function About() {
                 (ganti dengan foto asli)
               </span>
             </div>
-          </div>
+          </RevealOnScroll>
 
           {/* Perkenalan + benefit */}
           <div>
-            <h2 className="font-display font-bold text-3xl md:text-4xl mb-4 text-navy-dark">
-              Tentang Saya
-            </h2>
-            <p className="text-base md:text-lg text-navy-dark/70 leading-relaxed max-w-2xl">
-              Saya Prayuda, developer dan desainer independen berbasis di
-              Semarang. Fokus saya membangun website yang benar-benar
-              dikerjakan sesuai kebutuhan klien — dari company profile bisnis
-              jasa sampai toko online — dengan proses yang jelas dari awal
-              sampai akhir, bukan sekadar utak-atik template.
-            </p>
+            <RevealOnScroll>
+              <h2 className="font-display font-bold text-3xl md:text-4xl mb-4 text-navy-dark">
+                Tentang Saya
+              </h2>
+            </RevealOnScroll>
+            <RevealOnScroll delay={120}>
+              <p className="text-base md:text-lg text-navy-dark/70 leading-relaxed max-w-2xl">
+                Saya Prayuda, developer dan desainer independen berbasis di
+                Semarang. Fokus saya membangun website yang benar-benar
+                dikerjakan sesuai kebutuhan klien — dari company profile bisnis
+                jasa sampai toko online — dengan proses yang jelas dari awal
+                sampai akhir, bukan sekadar utak-atik template.
+              </p>
+            </RevealOnScroll>
 
             <div className="mt-10 grid sm:grid-cols-3 gap-5">
               {BENEFITS.map((benefit, i) => (
-                <div
-                  key={benefit.title}
-                  className="glass-card glass-hover rounded-2xl p-5"
-                >
-                  <div className="font-display font-bold text-2xl mb-2 text-navy">
-                    0{i + 1}
+                <RevealOnScroll key={benefit.title} delay={i * 120}>
+                  <div className="glass-card glass-hover rounded-2xl p-5 h-full">
+                    <div className="font-display font-bold text-2xl mb-2 text-navy">
+                      0{i + 1}
+                    </div>
+                    <h3 className="font-display font-semibold text-base mb-2 text-navy-dark">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-sm text-navy-dark/65 leading-relaxed">
+                      {benefit.desc}
+                    </p>
                   </div>
-                  <h3 className="font-display font-semibold text-base mb-2 text-navy-dark">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-sm text-navy-dark/65 leading-relaxed">
-                    {benefit.desc}
-                  </p>
-                </div>
+                </RevealOnScroll>
               ))}
             </div>
           </div>
