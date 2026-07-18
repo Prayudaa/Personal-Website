@@ -12,7 +12,7 @@ export default function Header() {
       <div className="mx-auto max-w-6xl px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
         <a
           href="#home"
-          className="font-display font-bold text-xl md:text-2xl tracking-tight text-navy-dark"
+          className="font-display font-bold text-xl md:text-2xl tracking-tight text-navy-dark transition-transform duration-200 hover:scale-[1.02]"
         >
           by<span className="text-navy">prayuda</span>
         </a>
@@ -22,7 +22,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="font-medium text-sm text-navy-dark/70 hover:text-navy transition-colors"
+              className="font-medium text-sm text-navy-dark/70 hover:text-navy transition-all duration-200 hover:-translate-y-0.5"
             >
               {link.label}
             </a>
@@ -34,7 +34,7 @@ export default function Header() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-hover bg-navy text-bg font-display font-semibold px-5 py-2.5 rounded-full flex items-center gap-2 text-sm shadow-md shadow-navy/20"
+            className="glass-hover bg-navy text-bg font-display font-semibold px-5 py-2.5 rounded-full flex items-center gap-2 text-sm shadow-md shadow-navy/20 hover:shadow-lg hover:shadow-navy/30"
           >
             <MessageCircle size={18} strokeWidth={2} />
             Chat WhatsApp
@@ -42,7 +42,7 @@ export default function Header() {
         </div>
 
         <button
-          className="md:hidden glass-card p-2 rounded-xl text-navy-dark"
+          className="md:hidden glass-card p-2 rounded-xl text-navy-dark transition-transform duration-200 active:scale-95"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Tutup menu" : "Buka menu"}
           aria-expanded={open}
@@ -68,7 +68,7 @@ export default function Header() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-navy text-bg font-display font-semibold px-5 py-3 rounded-full flex items-center justify-center gap-2 text-sm mt-4"
+              className="bg-navy text-bg font-display font-semibold px-5 py-3 rounded-full flex items-center justify-center gap-2 text-sm mt-4 shadow-md shadow-navy/20"
             >
               <MessageCircle size={18} strokeWidth={2} />
               Chat WhatsApp

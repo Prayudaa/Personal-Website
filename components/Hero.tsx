@@ -39,19 +39,47 @@ export default function Hero() {
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group glass-hover bg-navy text-bg font-display font-semibold px-7 py-4 rounded-full flex items-center justify-center gap-2 text-base shadow-lg shadow-navy/25 hover:shadow-xl hover:shadow-navy/30 relative overflow-hidden"
+                  className="cta-primary group relative overflow-hidden rounded-full px-7 py-4 text-base font-display font-semibold text-white shadow-[0_20px_50px_rgba(41,69,162,0.28)]"
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  <MessageCircle size={20} strokeWidth={2} className="relative z-10" />
-                  <span className="relative z-10">Diskusi via WhatsApp</span>
+                  <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.24),transparent)] translate-x-[-120%] transition-transform duration-700 group-hover:translate-x-[120%]" />
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    <MessageCircle size={20} strokeWidth={2} />
+                    Booking Konsultasi Gratis
+                  </span>
                 </a>
                 <a
                   href="#portofolio"
-                  className="group glass-card glass-hover text-navy-dark font-display font-semibold px-7 py-4 rounded-full flex items-center justify-center gap-2 text-base hover:border-navy/20"
+                  className="cta-secondary group glass-hover text-navy-dark font-display font-semibold px-7 py-4 rounded-full flex items-center justify-center gap-2 text-base hover:border-navy/20"
                 >
                   <span className="transition-transform duration-300 group-hover:translate-x-1">Lihat Portofolio</span>
                   <ArrowRight size={20} strokeWidth={2} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </a>
+              </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={360}>
+              <div className="mt-4 flex flex-wrap items-center gap-3 text-sm font-medium text-navy-dark/75">
+                <span className="rounded-full border border-navy/10 bg-white/75 px-3 py-1.5 shadow-sm">
+                  ⚡ Balas dalam 1 hari kerja
+                </span>
+                <span className="rounded-full border border-navy/10 bg-white/75 px-3 py-1.5 shadow-sm">
+                  ✅ Gratis konsultasi awal
+                </span>
+              </div>
+
+              <div className="mt-5 flex flex-wrap gap-3">
+                {[
+                  "⚡ Respons cepat",
+                  "🎯 Desain khusus",
+                  "📈 Siap tumbuh",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-navy/10 bg-white/70 px-3 py-1.5 text-sm font-medium text-navy-dark/80"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </RevealOnScroll>
           </div>

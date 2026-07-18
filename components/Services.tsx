@@ -18,49 +18,68 @@ export default function Services() {
           </p>
         </RevealOnScroll>
 
+        <RevealOnScroll delay={180}>
+          <div className="mb-10 grid sm:grid-cols-3 gap-3">
+            {[
+              { title: "Konsultasi Gratis", desc: "Diskusi pertama tanpa biaya" },
+              { title: "Harga Transparan", desc: "Sesuai scope dan kebutuhan" },
+              { title: "Support Pasca Launch", desc: "Siap bantu setelah website aktif" },
+            ].map((item) => (
+              <div key={item.title} className="rounded-2xl border border-navy/10 bg-white/70 px-4 py-3">
+                <div className="font-display font-semibold text-base text-navy-dark">{item.title}</div>
+                <div className="text-sm text-navy-dark/60 mt-1">{item.desc}</div>
+              </div>
+            ))}
+          </div>
+        </RevealOnScroll>
+
         <div className="grid md:grid-cols-3 gap-6 items-stretch">
           {SERVICES.map((service, index) => (
             <RevealOnScroll key={service.name} delay={index * 100}>
               <div
-                className={`rounded-3xl p-6 flex flex-col h-full ${
+                className={`rounded-[28px] p-6 flex flex-col h-full border ${
+                  service.highlight
+                    ? "border-navy/20"
+                    : "border-navy/10"
+                } ${
                   service.highlight
                     ? "bg-navy text-bg shadow-xl shadow-navy/30 md:-translate-y-3"
                     : "glass-card text-navy-dark"
                 }`}
               >
-              {service.highlight && (
-                <span className="self-start bg-accent-light text-navy-dark text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                  Paling Diminati
-                </span>
-              )}
-              <h3 className="font-display font-bold text-2xl mb-1">
-                {service.name}
-              </h3>
-              <p
-                className={`text-sm mb-4 ${
-                  service.highlight ? "text-bg/75" : "text-navy-dark/65"
-                }`}
-              >
-                {service.desc}
-              </p>
-              <div className="font-display font-bold text-lg mb-5">
-                {service.price}
-              </div>
+                {service.highlight && (
+                  <span className="self-start bg-accent-light text-navy-dark text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                    Paling Diminati
+                  </span>
+                )}
+                <h3 className="font-display font-bold text-2xl mb-1">
+                  {service.name}
+                </h3>
+                <p
+                  className={`text-sm mb-4 ${
+                    service.highlight ? "text-bg/75" : "text-navy-dark/65"
+                  }`}
+                >
+                  {service.desc}
+                </p>
+                <div className="font-display font-bold text-lg mb-5">
+                  {service.price}
+                </div>
 
-              <ul className="space-y-2.5 flex-1 mb-6">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm">
-                    <Check
-                      size={18}
-                      strokeWidth={2.5}
-                      className={`shrink-0 mt-0.5 ${
-                        service.highlight ? "text-accent-light" : "text-navy"
-                      }`}
-                    />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
+                <ul className="space-y-2.5 flex-1 mb-6">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-2 text-sm">
+                      <Check
+                        size={18}
+                        strokeWidth={2.5}
+                        className={`shrink-0 mt-0.5 ${
+                          service.highlight ? "text-accent-light" : "text-navy"
+                        }`}
+                      />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
 
                 <a
                   href={WHATSAPP_LINK}

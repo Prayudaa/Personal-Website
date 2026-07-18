@@ -27,6 +27,19 @@ export const BENEFITS = [
   },
 ];
 
+export const TRUST_BADGES = [
+  { label: "Respons Cepat", detail: "Balas dalam 1 hari kerja" },
+  { label: "Custom Design", detail: "Desain khusus, bukan template" },
+  { label: "SEO Friendly", detail: "Struktur website siap tumbuh" },
+  { label: "Free Consultation", detail: "Diskusi pertama gratis" },
+];
+
+export const SOCIAL_PROOF = [
+  { value: "10+", label: "Project diselesaikan" },
+  { value: "100%", label: "Konsultasi gratis" },
+  { value: "24/7", label: "Komunikasi via WhatsApp" },
+];
+
 export type Project = {
   slug: string;
   title: string;

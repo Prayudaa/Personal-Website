@@ -22,23 +22,43 @@ export default function Contact() {
         </RevealOnScroll>
 
         <RevealOnScroll delay={220}>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex flex-col items-center justify-center gap-4">
             <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-hover bg-accent-light text-navy-dark font-display font-semibold px-8 py-4 rounded-full flex items-center gap-2 text-base shadow-lg shadow-black/20"
+              className="cta-primary cta-primary--alt group relative overflow-hidden rounded-full px-8 py-4 text-base font-display font-semibold text-white shadow-[0_24px_60px_rgba(0,0,0,0.22)]"
             >
-              <MessageCircle size={22} strokeWidth={2} />
-              Chat via WhatsApp Sekarang
+              <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.28),transparent)] translate-x-[-120%] transition-transform duration-700 group-hover:translate-x-[120%]" />
+              <span className="relative z-10 flex items-center justify-center gap-2">
+                <MessageCircle size={22} strokeWidth={2} />
+                Saya Siap Bantu Hari Ini
+              </span>
             </a>
+            <p className="text-sm text-bg/70">
+              Gratis, cepat, dan tanpa komitmen — langsung hubungi lewat WhatsApp.
+            </p>
           </div>
         </RevealOnScroll>
 
-        <div className="mt-12 flex justify-center gap-6 text-sm text-bg/50">
+        <RevealOnScroll delay={260}>
+          <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm text-bg/70">
+            {[
+              "⚡ Respons cepat",
+              "📍 Bisa konsultasi via WhatsApp",
+              "🛠️ Proses jelas dari awal sampai launch",
+            ].map((item) => (
+              <span key={item} className="rounded-full border border-white/10 bg-white/10 px-3 py-1.5">
+                {item}
+              </span>
+            ))}
+          </div>
+        </RevealOnScroll>
+
+        <div className="mt-12 flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 text-sm text-bg/50">
           <a
             href="mailto:prayuda040305@gmail.com"
-            className="flex items-center gap-2 hover:text-bg transition-colors"
+            className="flex items-center gap-2 hover:text-bg transition-colors rounded-full px-3 py-2 hover:bg-white/10"
           >
             <Mail size={16} />
             prayuda040305@gmail.com
@@ -47,7 +67,7 @@ export default function Contact() {
             href="https://instagram.com/Pr4yuda"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-bg transition-colors"
+            className="flex items-center gap-2 hover:text-bg transition-colors rounded-full px-3 py-2 hover:bg-white/10"
           >
             <AtSign size={16} />
             @Pr4yuda

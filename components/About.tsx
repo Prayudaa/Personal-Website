@@ -34,6 +34,21 @@ export default function About() {
               </p>
             </RevealOnScroll>
 
+            <RevealOnScroll delay={180}>
+              <div className="mt-6 grid sm:grid-cols-3 gap-3">
+                {[
+                  { value: "10+", label: "Project selesai" },
+                  { value: "1 hari", label: "Balasan rata-rata" },
+                  { value: "100%", label: "Konsultasi gratis" },
+                ].map((stat) => (
+                  <div key={stat.label} className="rounded-2xl border border-navy/10 bg-white/70 px-4 py-3">
+                    <div className="font-display font-bold text-xl text-navy">{stat.value}</div>
+                    <div className="text-sm text-navy-dark/65">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </RevealOnScroll>
+
             <div className="mt-10 grid sm:grid-cols-3 gap-5">
               {BENEFITS.map((benefit, i) => (
                 <RevealOnScroll key={benefit.title} delay={i * 120}>
