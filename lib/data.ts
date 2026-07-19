@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
   {
     slug: "gerakansolusi",
     title: "Gerakan Solusi",
-    category: "Website Portfolio",
+    category: "Website CMS",
     description:
       "Website resmi Gerakan Solusi yang menampilkan layanan, proyek, dan solusi digital untuk bisnis dan komunitas.",
     tags: ["Next.js", "Tailwind", "Design"],
