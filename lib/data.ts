@@ -46,18 +46,20 @@ export type Project = {
   category: string;
   description: string;
   tags: string[];
+  url?: string;
   type: "Studi Kasus" | "Personal Project";
 };
 
 export const PROJECTS: Project[] = [
   {
-    slug: "flowstack",
-    title: "FlowStack",
-    category: "Landing Page SaaS",
+    slug: "gerakansolusi",
+    title: "Gerakan Solusi",
+    category: "Website Portfolio",
     description:
-      "Landing page untuk produk SaaS fiktif, dibuat dua versi gaya desain berbeda untuk membandingkan pendekatan visual pada satu brief yang sama.",
-    tags: ["Next.js", "Tailwind", "Framer Motion"],
-    type: "Personal Project",
+      "Website resmi Gerakan Solusi yang menampilkan layanan, proyek, dan solusi digital untuk bisnis dan komunitas.",
+    tags: ["Next.js", "Tailwind", "Design"],
+    url: "https://gerakansolusi.id",
+    type: "Studi Kasus",
   },
   {
     slug: "pulse-analytics",

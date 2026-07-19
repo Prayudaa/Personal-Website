@@ -56,6 +56,16 @@ export default function Portfolio() {
                       </span>
                     ))}
                   </div>
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-5 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#5d74e8] via-[#8aa4ff] to-[#f7c948] px-4 py-3 text-sm font-semibold text-[#08101f] shadow-[0_18px_40px_rgba(0,0,0,0.18)] hover:opacity-90 transition-opacity"
+                    >
+                      Lihat Situs
+                    </a>
+                  )}
                 </div>
               </article>
             </RevealOnScroll>
