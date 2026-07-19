@@ -176,3 +176,30 @@ export const FAQS = [
     a: "Bisa, tergantung paket — untuk toko online tersedia panel kelola produk sendiri tanpa perlu tahu coding.",
   },
 ];
+
+export const METRICS = [
+  {
+    icon: "★",
+    value: "4.9/5",
+    label: "Rating Klien",
+    description: "Skor kepuasan berdasarkan feedback pengguna terhadap desain dan kecepatan penyelesaian.",
+  },
+  {
+    icon: "⚡",
+    value: "1 hari",
+    label: "Response Time",
+    description: "Balasan awal untuk diskusi dan pertanyaan penting, menjaga komunikasi tetap cepat.",
+  },
+  {
+    icon: "📈",
+    value: "60%",
+    label: "Tingkat Konversi",
+    description: "Website yang dirancang untuk menarik perhatian dan memaksimalkan tindakan pengunjung.",
+  },
+  {
+    icon: "💼",
+    value: "10+",
+    label: "Proyek Selesai",
+    description: "Pengalaman kerja yang menunjukkan kemampuan untuk menyelesaikan berbagai kebutuhan bisnis.",
+  },
+];
