@@ -34,7 +34,7 @@ export default function Header() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-hover bg-gradient-to-r from-[#5d74e8] via-[#8aa4ff] to-[#f7c948] text-bg font-display font-semibold px-5 py-2.5 rounded-full flex items-center gap-2 text-sm shadow-[0_24px_60px_rgba(0,0,0,0.24)] hover:shadow-[0_32px_90px_rgba(0,0,0,0.28)]"
+            className="glass-hover bg-gradient-to-r from-[#234b63] via-[#3c6d87] to-[#c7924f] text-bg font-display font-semibold px-5 py-2.5 rounded-full flex items-center gap-2 text-sm shadow-[0_24px_60px_rgba(35,75,99,0.24)] hover:shadow-[0_32px_90px_rgba(35,75,99,0.28)]"
           >
             <MessageCircle size={18} strokeWidth={2} />
             Chat WhatsApp

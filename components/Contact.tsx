@@ -4,7 +4,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Contact() {
   return (
-    <section id="kontak" className="relative overflow-hidden bg-[linear-gradient(135deg,_#0f1b3d_0%,_#2945a2_100%)] section-shell py-16 md:py-24">
+    <section id="kontak" className="relative overflow-hidden bg-[linear-gradient(135deg,_#132b3d_0%,_#234b63_100%)] section-shell py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8 text-center">
         <RevealOnScroll>
           <h2 className="font-display font-bold text-3xl md:text-5xl max-w-2xl mx-auto leading-tight text-bg text-glow">
@@ -27,7 +27,7 @@ export default function Contact() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="cta-primary group relative overflow-hidden rounded-full px-8 py-4 text-base font-display font-semibold text-[#08101f] shadow-[0_30px_90px_rgba(0,0,0,0.28)] hover:shadow-[0_35px_110px_rgba(0,0,0,0.32)]"
+              className="cta-primary group relative overflow-hidden rounded-full px-8 py-4 text-base font-display font-semibold text-[#fdf9f2] shadow-[0_30px_90px_rgba(35,75,99,0.28)] hover:shadow-[0_35px_110px_rgba(35,75,99,0.32)]"
             >
               <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.28),transparent)] translate-x-[-120%] transition-transform duration-700 group-hover:translate-x-[120%]" />
               <span className="relative z-10 flex items-center justify-center gap-2">

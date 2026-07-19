@@ -76,7 +76,7 @@ export default function Portfolio() {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-5 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#5d74e8] via-[#8aa4ff] to-[#f7c948] px-4 py-3 text-sm font-semibold text-[#08101f] shadow-[0_18px_40px_rgba(0,0,0,0.18)] hover:opacity-90 transition-opacity"
+                      className="mt-5 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#234b63] via-[#3c6d87] to-[#c7924f] px-4 py-3 text-sm font-semibold text-[#fdf9f2] shadow-[0_18px_40px_rgba(35,75,99,0.2)] hover:opacity-90 transition-opacity"
                     >
                       Lihat Project
                     </a>
