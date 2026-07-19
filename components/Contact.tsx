@@ -4,7 +4,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Contact() {
   return (
-    <section id="kontak" className="bg-navy-dark section-shell py-16 md:py-24">
+    <section id="kontak" className="relative overflow-hidden bg-[linear-gradient(135deg,_#0f1b3d_0%,_#2945a2_100%)] section-shell py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8 text-center">
         <RevealOnScroll>
           <h2 className="font-display font-bold text-3xl md:text-5xl max-w-2xl mx-auto leading-tight text-bg text-glow">

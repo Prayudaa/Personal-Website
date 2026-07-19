@@ -43,7 +43,7 @@ export default function Services() {
                     : "border-navy/10"
                 } ${
                   service.highlight
-                    ? "bg-gradient-to-br from-[#f7c948] via-[#e5b739] to-[#d8a130] text-[#08101f] shadow-[0_24px_70px_rgba(0,0,0,0.24)] md:-translate-y-3"
+                    ? "bg-[linear-gradient(135deg,_#2945a2_0%,_#3f63c8_45%,_#7b98e8_100%)] text-[#fbf7f4] shadow-[0_24px_70px_rgba(41,69,162,0.24)] md:-translate-y-3"
                     : "glass-card text-navy-dark"
                 }`}
               >

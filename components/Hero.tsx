@@ -13,7 +13,7 @@ export default function Hero() {
               <div className="glass-card inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 text-navy shadow-sm bg-[rgba(255,255,255,0.08)] border border-white/10">
                 <ShieldCheck size={16} strokeWidth={2.5} />
                 <span className="font-medium text-xs md:text-sm text-navy-dark">
-                  Premium Website & Brand Experience
+                  Trusted by founders & growing businesses
                 </span>
               </div>
             </RevealOnScroll>
@@ -21,7 +21,7 @@ export default function Hero() {
             <RevealOnScroll delay={120}>
               <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-7xl leading-[1.08] max-w-3xl text-navy-dark tracking-tight text-glow">
                 Website premium yang membangun
-                <span className="text-accent-light"> kepercayaan</span> dan citra bisnis kamu.
+                <span className="text-accent-light"> kepercayaan</span> dari detik pertama.
               </h1>
             </RevealOnScroll>
 
@@ -29,7 +29,7 @@ export default function Hero() {
               <p className="mt-8 max-w-xl text-base md:text-lg text-navy-dark/70 leading-relaxed">
                 Company profile dan toko online yang dirancang rapi, profesional,
                 dan dibangun custom sesuai kebutuhan — supaya calon pelanggan
-                percaya sejak kunjungan pertama.
+                merasa aman, percaya, dan siap berinteraksi sejak kunjungan pertama.
               </p>
             </RevealOnScroll>
 
@@ -96,7 +96,7 @@ export default function Hero() {
                       Experience
                     </p>
                     <h2 className="font-display font-bold text-2xl text-navy-dark mt-1">
-                      Solusi yang terasa premium
+                      Kesan premium, proses yang terpercaya
                     </h2>
                   </div>
                   <div className="rounded-2xl bg-navy/10 p-3 text-navy">

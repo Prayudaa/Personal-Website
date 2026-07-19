@@ -8,12 +8,18 @@ export default function About() {
         <div className="grid md:grid-cols-[280px_1fr] gap-10 md:gap-14 items-start">
           {/* Foto */}
           <RevealOnScroll className="mx-auto md:mx-0">
-            <div className="glass-card w-56 h-56 md:w-64 md:h-64 rounded-3xl flex items-center justify-center">
-              <span className="text-navy-dark/40 text-sm text-center px-4 font-medium">
-                Foto Prayuda
-                <br />
-                (ganti dengan foto asli)
-              </span>
+            <div className="glass-card w-56 h-56 md:w-64 md:h-64 rounded-[32px] flex items-center justify-center p-5">
+              <div className="flex h-full w-full flex-col items-center justify-center rounded-[26px] border border-navy/10 bg-[linear-gradient(135deg,rgba(41,69,162,0.12),rgba(255,255,255,0.4))] text-center">
+                <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-navy text-xl font-bold text-bg shadow-lg shadow-navy/20">
+                  P
+                </div>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-navy/70">
+                  Prayuda
+                </p>
+                <p className="mt-1 text-sm text-navy-dark/65">
+                  Designer & Developer
+                </p>
+              </div>
             </div>
           </RevealOnScroll>
 
