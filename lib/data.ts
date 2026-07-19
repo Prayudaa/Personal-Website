@@ -63,24 +63,6 @@ export const PROJECTS: Project[] = [
     url: "https://gerakansolusi.id",
     type: "Studi Kasus",
   },
-  {
-    slug: "pulse-analytics",
-    title: "Pulse Analytics",
-    category: "Dashboard",
-    description:
-      "Dashboard analitik dengan visualisasi data interaktif — grafik, filter, dan tabel data yang responsif.",
-    tags: ["React", "Recharts", "TypeScript"],
-    type: "Personal Project",
-  },
-  {
-    slug: "taskvault",
-    title: "TaskVault",
-    category: "Fullstack App",
-    description:
-      "Aplikasi manajemen tugas fullstack dengan autentikasi, database, dan CRUD penuh — dibangun untuk menunjukkan kemampuan di luar landing page statis.",
-    tags: ["Next.js", "Supabase", "Auth"],
-    type: "Personal Project",
-  },
 ];
 
 export const SKILLS = [
