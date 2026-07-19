@@ -4,7 +4,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Services() {
   return (
-    <section id="layanan" className="mesh-bg py-16 md:py-24">
+    <section id="layanan" className="mesh-bg section-shell py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <RevealOnScroll>
           <h2 className="font-display font-bold text-3xl md:text-4xl mb-3 text-navy-dark">
@@ -39,11 +39,11 @@ export default function Services() {
               <div
                 className={`rounded-[28px] p-6 flex flex-col h-full border ${
                   service.highlight
-                    ? "border-navy/20"
+                    ? "border-white/10"
                     : "border-navy/10"
                 } ${
                   service.highlight
-                    ? "bg-navy text-bg shadow-xl shadow-navy/30 md:-translate-y-3"
+                    ? "bg-gradient-to-br from-[#f7c948] via-[#e5b739] to-[#d8a130] text-[#08101f] shadow-[0_24px_70px_rgba(0,0,0,0.24)] md:-translate-y-3"
                     : "glass-card text-navy-dark"
                 }`}
               >

@@ -3,7 +3,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Process() {
   return (
-    <section className="mesh-bg py-16 md:py-24">
+    <section className="mesh-bg section-shell py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <RevealOnScroll>
           <h2 className="font-display font-bold text-3xl md:text-4xl mb-3 text-navy-dark">
@@ -12,19 +12,18 @@ export default function Process() {
         </RevealOnScroll>
         <RevealOnScroll delay={120}>
           <p className="text-navy-dark/70 max-w-lg mb-10">
-            Belum ada testimoni klien untuk ditampilkan — jadi biar tetap jujur,
-            ini cara saya kerja supaya kamu tahu persis apa yang akan terjadi.
+            Cara kerja yang jelas dan sistematis, agar kamu yakin dengan hasil website premium yang akan dibangun.
           </p>
         </RevealOnScroll>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
           {PROCESS_STEPS.map((item, index) => (
             <RevealOnScroll key={item.step} delay={index * 90}>
-              <div className="glass-card glass-hover rounded-2xl p-5 h-full">
-                <div className="font-display font-bold text-4xl text-navy mb-3">
+              <div className="glass-card glass-hover rounded-[28px] p-6 h-full border border-white/10 bg-[rgba(255,255,255,0.05)] shadow-[0_24px_70px_rgba(0,0,0,0.16)]">
+                <div className="font-display font-bold text-4xl text-accent-light mb-3">
                   {item.step}
                 </div>
-                <h3 className="font-display font-semibold text-lg mb-2 text-navy-dark">
+                <h3 className="font-display font-semibold text-lg mb-3 text-navy-dark">
                   {item.title}
                 </h3>
                 <p className="text-sm text-navy-dark/65 leading-relaxed">
@@ -43,7 +42,7 @@ export default function Process() {
         <div className="grid sm:grid-cols-2 gap-4">
           {FAQS.map((faq, index) => (
             <RevealOnScroll key={faq.q} delay={index * 80}>
-              <div className="glass-card rounded-2xl p-5 h-full">
+              <div className="glass-card-solid rounded-[28px] p-5 h-full border border-white/10">
                 <h4 className="font-display font-semibold text-base mb-2 text-navy-dark">
                   {faq.q}
                 </h4>

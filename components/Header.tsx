@@ -12,9 +12,9 @@ export default function Header() {
       <div className="mx-auto max-w-6xl px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
         <a
           href="#home"
-          className="font-display font-bold text-xl md:text-2xl tracking-tight text-navy-dark transition-transform duration-200 hover:scale-[1.02]"
+          className="font-display font-bold text-xl md:text-2xl tracking-tight text-navy-dark transition-all duration-200 hover:text-accent-light"
         >
-          by<span className="text-navy">prayuda</span>
+          by<span className="text-accent-light">prayuda</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -34,7 +34,7 @@ export default function Header() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-hover bg-navy text-bg font-display font-semibold px-5 py-2.5 rounded-full flex items-center gap-2 text-sm shadow-md shadow-navy/20 hover:shadow-lg hover:shadow-navy/30"
+            className="glass-hover bg-gradient-to-r from-[#5d74e8] via-[#8aa4ff] to-[#f7c948] text-bg font-display font-semibold px-5 py-2.5 rounded-full flex items-center gap-2 text-sm shadow-[0_24px_60px_rgba(0,0,0,0.24)] hover:shadow-[0_32px_90px_rgba(0,0,0,0.28)]"
           >
             <MessageCircle size={18} strokeWidth={2} />
             Chat WhatsApp
@@ -42,7 +42,7 @@ export default function Header() {
         </div>
 
         <button
-          className="md:hidden glass-card p-2 rounded-xl text-navy-dark transition-transform duration-200 active:scale-95"
+          className="md:hidden glass-card p-2 rounded-xl text-navy-dark transition-transform duration-200 active:scale-95 bg-[rgba(255,255,255,0.08)] border border-white/10"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Tutup menu" : "Buka menu"}
           aria-expanded={open}

@@ -3,7 +3,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Portfolio() {
   return (
-    <section id="portofolio" className="mesh-bg py-16 md:py-24">
+    <section id="portofolio" className="mesh-bg section-shell py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
           <RevealOnScroll>
@@ -28,10 +28,10 @@ export default function Portfolio() {
           {PROJECTS.map((project, index) => (
             <RevealOnScroll key={project.slug} delay={index * 120}>
               <article className="glass-card glass-hover rounded-[28px] overflow-hidden flex flex-col h-full border border-navy/10 shadow-[0_18px_45px_rgba(15,27,61,0.08)]">
-                <div className="h-44 bg-gradient-to-br from-navy/10 via-white to-accent-light/20 flex items-center justify-center border-b border-navy/10 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(41,69,162,0.16),_transparent_50%)]" />
-                  <span className="relative text-navy-dark/35 text-sm font-medium px-4 text-center">
-                    Preview {project.title}
+                <div className="h-44 bg-gradient-to-br from-[#102040] via-[#13264f] to-[#283d70] flex items-center justify-center border-b border-white/10 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(138,164,255,0.18),_transparent_45%)]" />
+                  <span className="relative text-white/35 text-sm font-medium px-4 text-center">
+                    Portofolio {project.title}
                     <br />
                     (ganti dengan screenshot asli)
                   </span>

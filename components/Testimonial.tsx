@@ -17,15 +17,15 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <section className="py-16 md:py-24 bg-white/60">
+    <section className="py-16 md:py-24 section-shell bg-white/8">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <RevealOnScroll>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-navy/70">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light/80">
                 Testimonial
               </p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl text-navy-dark mt-2">
+              <h2 className="font-display font-bold text-3xl md:text-4xl text-navy-dark mt-2 text-glow">
                 Apa yang klien rasakan
               </h2>
             </div>
@@ -38,8 +38,8 @@ export default function Testimonial() {
         <div className="grid md:grid-cols-2 gap-6">
           {testimonials.map((item, index) => (
             <RevealOnScroll key={item.name} delay={index * 120}>
-              <blockquote className="glass-card rounded-[28px] p-7 md:p-8 h-full border border-navy/10 shadow-[0_20px_60px_rgba(15,27,61,0.06)]">
-                <p className="text-lg leading-relaxed text-navy-dark/80">
+              <blockquote className="glass-card rounded-[28px] p-7 md:p-8 h-full border border-white/10 shadow-[0_24px_70px_rgba(0,0,0,0.2)] bg-[rgba(255,255,255,0.05)]">
+                <p className="text-lg leading-relaxed text-navy-dark/75">
                   “{item.quote}”
                 </p>
                 <footer className="mt-6">

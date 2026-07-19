@@ -10,18 +10,18 @@ export default function Hero() {
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
           <div>
             <RevealOnScroll>
-              <div className="glass-card inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 text-navy shadow-sm">
+              <div className="glass-card inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 text-navy shadow-sm bg-[rgba(255,255,255,0.08)] border border-white/10">
                 <ShieldCheck size={16} strokeWidth={2.5} />
-                <span className="font-medium text-xs md:text-sm">
-                  Jasa Pembuatan Website Terpercaya
+                <span className="font-medium text-xs md:text-sm text-navy-dark">
+                  Premium Website & Brand Experience
                 </span>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll delay={120}>
-              <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-7xl leading-[1.08] max-w-3xl text-navy-dark tracking-tight">
-                Website yang membangun{" "}
-                <span className="text-navy">kepercayaan</span> untuk bisnis kamu.
+              <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-7xl leading-[1.08] max-w-3xl text-navy-dark tracking-tight text-glow">
+                Website premium yang membangun
+                <span className="text-accent-light"> kepercayaan</span> dan citra bisnis kamu.
               </h1>
             </RevealOnScroll>
 

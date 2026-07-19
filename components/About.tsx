@@ -3,7 +3,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function About() {
   return (
-    <section id="tentang" className="mesh-bg py-16 md:py-24">
+    <section id="tentang" className="mesh-bg section-shell py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid md:grid-cols-[280px_1fr] gap-10 md:gap-14 items-start">
           {/* Foto */}
@@ -41,9 +41,9 @@ export default function About() {
                   { value: "1 hari", label: "Balasan rata-rata" },
                   { value: "100%", label: "Konsultasi gratis" },
                 ].map((stat) => (
-                  <div key={stat.label} className="rounded-2xl border border-navy/10 bg-white/70 px-4 py-3">
-                    <div className="font-display font-bold text-xl text-navy">{stat.value}</div>
-                    <div className="text-sm text-navy-dark/65">{stat.label}</div>
+                  <div key={stat.label} className="rounded-3xl border border-white/10 bg-[rgba(255,255,255,0.06)] px-4 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
+                    <div className="font-display font-bold text-xl text-navy-dark">{stat.value}</div>
+                    <div className="text-sm text-navy-dark/60">{stat.label}</div>
                   </div>
                 ))}
               </div>
