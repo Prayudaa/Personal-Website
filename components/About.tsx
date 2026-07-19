@@ -27,16 +27,12 @@ export default function About() {
           <div>
             <RevealOnScroll>
               <h2 className="font-display font-bold text-3xl md:text-4xl mb-4 text-navy-dark">
-                Tentang Saya
+                Solusi yang dibuat untuk bisnis yang ingin terlihat serius
               </h2>
             </RevealOnScroll>
             <RevealOnScroll delay={120}>
               <p className="text-base md:text-lg text-navy-dark/70 leading-relaxed max-w-2xl">
-                Saya Prayuda, developer dan desainer independen berbasis di
-                Semarang. Fokus saya membangun website yang benar-benar
-                dikerjakan sesuai kebutuhan klien — dari company profile bisnis
-                jasa sampai toko online — dengan proses yang jelas dari awal
-                sampai akhir, bukan sekadar utak-atik template.
+                Saya membantu bisnis menjadikan website sebagai alat penjualan dan kepercayaan. Dari company profile yang memberi kesan profesional sampai toko online yang memudahkan calon pelanggan mengambil keputusan, setiap detail dibuat untuk memperjelas nilai bisnis Anda.
               </p>
             </RevealOnScroll>
 

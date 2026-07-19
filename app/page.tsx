@@ -9,6 +9,7 @@ import Services from "@/components/Services";
 import Process from "@/components/Process";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import FloatingCta from "@/components/FloatingCta";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Process />
         <Contact />
       </main>
+      <FloatingCta />
       <Footer />
     </>
   );

@@ -9,17 +9,16 @@ export default function Portfolio() {
           <RevealOnScroll>
             <div>
               <h2 className="font-display font-bold text-3xl md:text-4xl text-navy-dark">
-                Portofolio
+                Bukti hasil, bukan sekadar tampilan
               </h2>
               <p className="mt-3 text-navy-dark/70 max-w-lg">
-                Kumpulan personal project untuk menunjukkan pendekatan dan
-                kemampuan teknis saya secara langsung.
+                Setiap proyek dibuat dengan fokus pada tujuan bisnis: memperjelas pesan, meningkatkan rasa percaya, dan membuat pengunjung lebih mudah bertindak.
               </p>
             </div>
           </RevealOnScroll>
           <RevealOnScroll delay={120}>
             <div className="glass-card inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs md:text-sm font-medium text-navy self-start">
-              Personal Project — bukan pekerjaan klien
+              Fokus belajar & eksperimen — bukti kemampuan teknis
             </div>
           </RevealOnScroll>
         </div>
@@ -79,7 +78,7 @@ export default function Portfolio() {
                       rel="noopener noreferrer"
                       className="mt-5 inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#5d74e8] via-[#8aa4ff] to-[#f7c948] px-4 py-3 text-sm font-semibold text-[#08101f] shadow-[0_18px_40px_rgba(0,0,0,0.18)] hover:opacity-90 transition-opacity"
                     >
-                      Lihat Situs
+                      Lihat Project
                     </a>
                   )}
                 </div>

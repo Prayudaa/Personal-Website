@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 items-center">
           <div>
             <RevealOnScroll>
-              <div className="glass-card inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 text-navy shadow-sm bg-[rgba(255,255,255,0.08)] border border-white/10">
+              <div className="glass-card glass-hover inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 text-navy shadow-sm bg-[rgba(255,255,255,0.08)] border border-white/10">
                 <ShieldCheck size={16} strokeWidth={2.5} />
                 <span className="font-medium text-xs md:text-sm text-navy-dark">
                   Trusted by founders & growing businesses
@@ -44,7 +44,7 @@ export default function Hero() {
                   <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.24),transparent)] translate-x-[-120%] transition-transform duration-700 group-hover:translate-x-[120%]" />
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     <MessageCircle size={20} strokeWidth={2} />
-                    Booking Konsultasi Gratis
+                    Konsultasi Gratis Sekarang
                   </span>
                 </a>
                 <a

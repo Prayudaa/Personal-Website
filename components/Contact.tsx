@@ -32,7 +32,7 @@ export default function Contact() {
               <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.28),transparent)] translate-x-[-120%] transition-transform duration-700 group-hover:translate-x-[120%]" />
               <span className="relative z-10 flex items-center justify-center gap-2">
                 <MessageCircle size={22} strokeWidth={2} />
-                Saya Siap Bantu Hari Ini
+                Mulai Project Hari Ini
               </span>
             </a>
             <p className="text-sm text-bg/70">
