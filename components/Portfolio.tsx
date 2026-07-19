@@ -28,13 +28,29 @@ export default function Portfolio() {
           {PROJECTS.map((project, index) => (
             <RevealOnScroll key={project.slug} delay={index * 120}>
               <article className="glass-card glass-hover rounded-[28px] overflow-hidden flex flex-col h-full border border-navy/10 shadow-[0_18px_45px_rgba(15,27,61,0.08)]">
-                <div className="h-44 bg-gradient-to-br from-[#102040] via-[#13264f] to-[#283d70] flex items-center justify-center border-b border-white/10 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(138,164,255,0.18),_transparent_45%)]" />
-                  <span className="relative text-white/35 text-sm font-medium px-4 text-center">
-                    Portofolio {project.title}
-                    <br />
-                    (ganti dengan screenshot asli)
-                  </span>
+                <div className="h-44 border-b border-white/10 relative overflow-hidden bg-[#102040]">
+                  {project.image ? (
+                    <>
+                      <img
+                        src={project.image}
+                        alt={`Screenshot ${project.title}`}
+                        className="absolute inset-0 h-full w-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-navy/45" />
+                      <div className="relative z-10 flex h-full items-center justify-center px-4 text-center text-sm font-medium text-white/90">
+                        Screenshot nyata {project.title}
+                      </div>
+                    </>
+                  ) : (
+                    <div className="h-full bg-gradient-to-br from-[#102040] via-[#13264f] to-[#283d70] flex items-center justify-center">
+                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(138,164,255,0.18),_transparent_45%)]" />
+                      <span className="relative text-white/35 text-sm font-medium px-4 text-center">
+                        Portofolio {project.title}
+                        <br />
+                        (ganti dengan screenshot asli)
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <span className="inline-flex w-fit rounded-full bg-navy/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-navy mb-3">

@@ -46,6 +46,7 @@ export type Project = {
   category: string;
   description: string;
   tags: string[];
+  image?: string;
   url?: string;
   type: "Studi Kasus" | "Personal Project";
 };
@@ -58,6 +59,7 @@ export const PROJECTS: Project[] = [
     description:
       "Website resmi Gerakan Solusi yang menampilkan layanan, proyek, dan solusi digital untuk bisnis dan komunitas.",
     tags: ["Next.js", "Tailwind", "Design"],
+    image: "https://s.wordpress.com/mshots/v1/gerakansolusi.id?w=1200",
     url: "https://gerakansolusi.id",
     type: "Studi Kasus",
   },
