@@ -64,13 +64,13 @@ export default function Contact() {
             prayuda040305@gmail.com
           </a>
           <a
-            href="https://instagram.com/Pr4yuda"
+            href="https://www.instagram.com/pr4yuda._/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 hover:text-bg transition-colors rounded-full px-3 py-2 hover:bg-white/10"
           >
             <AtSign size={16} />
-            @Pr4yuda
+            @pr4yuda._
           </a>
         </div>
       </div>
