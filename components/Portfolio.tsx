@@ -36,19 +36,19 @@ export default function Portfolio() {
                         alt={`Screenshot ${project.title}`}
                         className="absolute inset-0 h-full w-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-navy/45" />
-                      <div className="relative z-10 flex h-full items-center justify-center px-4 text-center text-sm font-medium text-white/90">
-                        Screenshot nyata {project.title}
-                      </div>
+                      <div className="absolute inset-0 bg-navy/25" />
                     </>
                   ) : (
-                    <div className="h-full bg-gradient-to-br from-[#102040] via-[#13264f] to-[#283d70] flex items-center justify-center">
+                    <div className="h-full bg-gradient-to-br from-[#102040] via-[#13264f] to-[#283d70] flex items-center justify-center px-4 text-center">
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(138,164,255,0.18),_transparent_45%)]" />
-                      <span className="relative text-white/35 text-sm font-medium px-4 text-center">
-                        Portofolio {project.title}
-                        <br />
-                        (ganti dengan screenshot asli)
-                      </span>
+                      <div className="relative z-10 space-y-2">
+                        <p className="text-sm font-semibold text-white/85">
+                          Preview tidak tersedia
+                        </p>
+                        <p className="text-xs text-white/60 max-w-xs">
+                          Tampilan proyek tetap ada dengan ringkasan dan link yang jelas.
+                        </p>
+                      </div>
                     </div>
                   )}
                 </div>
