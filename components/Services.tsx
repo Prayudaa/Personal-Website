@@ -85,10 +85,10 @@ export default function Services() {
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`glass-hover text-center font-display font-semibold px-5 py-3 rounded-full text-sm ${
+                  className={`glass-hover text-center font-display font-semibold px-5 py-3 rounded-full text-sm transition-all duration-300 ${
                     service.highlight
-                      ? "bg-bg text-navy-dark"
-                      : "bg-navy text-bg"
+                      ? "bg-[#fbf7f4] text-[#172850]"
+                      : "bg-[#2945a2] text-[#fbf7f4]"
                   }`}
                 >
                   Tanya Paket Ini
