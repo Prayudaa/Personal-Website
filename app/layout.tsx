@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
-
-// CATATAN: next/font/google butuh akses internet saat build.
-// Di lingkungan development ini domain fonts.googleapis.com diblokir,
-// jadi font di-load lewat @import di globals.css sebagai gantinya.
-// Saat deploy ke Vercel (yang punya akses penuh), kamu bisa ganti ke:
-//
-// import { Inter } from "next/font/google";
-// const inter = Inter({ variable: "--font-display", subsets: ["latin"], weight: ["400","500","600","700","800"] });
-//
-// lalu tambahkan `${inter.variable}` ke className <html> di bawah,
-// dan hapus @import font dari globals.css supaya tidak double-load.
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "byprayuda — Jasa Pembuatan Website untuk Bisnis & Toko Online",
@@ -37,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={cn("h-full antialiased", "font-sans", geist.variable)}>
+    <html lang="id" className={cn("h-full antialiased", "font-sans", inter.variable)}>
       <body className="min-h-full flex flex-col bg-bg text-navy-dark">
         {children}
       </body>

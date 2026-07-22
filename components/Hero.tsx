@@ -13,23 +13,23 @@ export default function Hero() {
               <div className="glass-card glass-hover inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6 text-navy shadow-sm bg-[rgba(255,255,255,0.08)] border border-white/10">
                 <ShieldCheck size={16} strokeWidth={2.5} />
                 <span className="font-medium text-xs md:text-sm text-navy-dark">
-                  Trusted by founders & growing businesses
+                  Trusted by founders, brands & growing teams
                 </span>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll delay={120}>
               <h1 className="font-display font-extrabold text-4xl sm:text-5xl md:text-7xl leading-[1.08] max-w-3xl text-navy-dark tracking-tight text-glow">
-                Website premium yang membangun
-                <span className="text-accent-light"> kepercayaan</span> dari detik pertama.
+                Website profesional yang
+                <span className="text-accent-light"> menanamkan kepercayaan</span> dari detik pertama.
               </h1>
             </RevealOnScroll>
 
             <RevealOnScroll delay={220}>
               <p className="mt-8 max-w-xl text-base md:text-lg text-navy-dark/70 leading-relaxed">
                 Company profile dan toko online yang dirancang rapi, profesional,
-                dan dibangun custom sesuai kebutuhan — supaya calon pelanggan
-                merasa aman, percaya, dan siap berinteraksi sejak kunjungan pertama.
+                dan dibangun custom sesuai kebutuhan — untuk memberi kesan terpercaya,
+                memudahkan keputusan, dan memperkuat citra bisnis Anda sejak kunjungan pertama.
               </p>
             </RevealOnScroll>
 
@@ -44,7 +44,7 @@ export default function Hero() {
                   <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.24),transparent)] translate-x-[-120%] transition-transform duration-700 group-hover:translate-x-[120%]" />
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     <MessageCircle size={20} strokeWidth={2} />
-                    Konsultasi Gratis Sekarang
+                    Konsultasi Gratis
                   </span>
                 </a>
                 <a
@@ -96,7 +96,7 @@ export default function Hero() {
                       Experience
                     </p>
                     <h2 className="font-display font-bold text-2xl text-navy-dark mt-1">
-                      Kesan premium, proses yang terpercaya
+                      Kesan premium, proses yang profesional
                     </h2>
                   </div>
                   <div className="rounded-2xl bg-navy/10 p-3 text-navy">
