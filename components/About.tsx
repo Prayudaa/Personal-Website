@@ -74,4 +74,3 @@ export default function About() {
     </section>
   );
 }
-z
