@@ -27,7 +27,7 @@ export default function About() {
           <div>
             <RevealOnScroll>
               <h2 className="font-display font-bold text-3xl md:text-4xl mb-4 text-navy-dark">
-                Solusi yang dibuat untuk bisnis yang ingin terlihat serius
+                Tentang Saya
               </h2>
             </RevealOnScroll>
             <RevealOnScroll delay={120}>
@@ -74,3 +74,4 @@ export default function About() {
     </section>
   );
 }
+z

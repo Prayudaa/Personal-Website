@@ -18,7 +18,7 @@ export default function Portfolio() {
           </RevealOnScroll>
           <RevealOnScroll delay={120}>
             <div className="glass-card inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs md:text-sm font-medium text-navy self-start">
-              Fokus belajar & eksperimen — bukti kemampuan teknis
+              Studi Kasus / Personal Project — bukan client work
             </div>
           </RevealOnScroll>
         </div>
@@ -52,9 +52,14 @@ export default function Portfolio() {
                   )}
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <span className="inline-flex w-fit rounded-full bg-navy/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-navy mb-3">
-                    {project.category}
-                  </span>
+                  <div className="mb-3 flex flex-wrap gap-2">
+                    <span className="inline-flex rounded-full bg-accent-light/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-accent-light">
+                      {project.type}
+                    </span>
+                    <span className="text-xs uppercase tracking-[0.24em] text-navy-dark/50">
+                      {project.category}
+                    </span>
+                  </div>
                   <h3 className="font-display font-bold text-xl mb-2 text-navy-dark leading-snug">
                     {project.title}
                   </h3>

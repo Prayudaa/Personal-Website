@@ -8,6 +8,7 @@ export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Tentang", href: "#tentang" },
   { label: "Portofolio", href: "#portofolio" },
+  { label: "Skill", href: "#skill" },
   { label: "Layanan", href: "#layanan" },
   { label: "Kontak", href: "#kontak" },
 ];
@@ -61,6 +62,24 @@ export const PROJECTS: Project[] = [
     tags: ["Next.js", "Tailwind", "Design"],
     image: "https://s.wordpress.com/mshots/v1/gerakansolusi.id?w=1200",
     url: "https://gerakansolusi.id",
+    type: "Studi Kasus",
+  },
+  {
+    slug: "kopi-kreasi",
+    title: "Kopi Kreasi",
+    category: "Personal Branding",
+    description:
+      "Landing page brand kopi specialty dengan storytelling produk dan tampilan lokal yang hangat.",
+    tags: ["Next.js", "Tailwind", "Figma"],
+    type: "Personal Project",
+  },
+  {
+    slug: "kursusfit",
+    title: "KursusFit",
+    category: "Platform Edukasi",
+    description:
+      "Website studi kasus untuk kursus online dengan paket, testimonial, dan formulir pendaftaran.",
+    tags: ["React", "Tailwind", "Content"],
     type: "Studi Kasus",
   },
 ];

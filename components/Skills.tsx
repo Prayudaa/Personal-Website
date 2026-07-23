@@ -3,7 +3,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Skills() {
   return (
-    <section className="bg-navy-dark section-shell py-16 md:py-24">
+    <section id="skill" className="bg-navy-dark section-shell py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <RevealOnScroll>
           <h2 className="font-display font-bold text-3xl md:text-4xl mb-10 text-bg text-glow">

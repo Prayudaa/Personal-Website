@@ -1,4 +1,4 @@
-import { PROCESS_STEPS, FAQS } from "@/lib/data";
+import { PROCESS_STEPS } from "@/lib/data";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Process() {
@@ -28,26 +28,6 @@ export default function Process() {
                 </h3>
                 <p className="text-sm text-navy-dark/65 leading-relaxed">
                   {item.desc}
-                </p>
-              </div>
-            </RevealOnScroll>
-          ))}
-        </div>
-
-        <RevealOnScroll>
-          <h3 className="font-display font-bold text-2xl mb-6 text-navy-dark">
-            Pertanyaan yang Sering Muncul
-          </h3>
-        </RevealOnScroll>
-        <div className="grid sm:grid-cols-2 gap-4">
-          {FAQS.map((faq, index) => (
-            <RevealOnScroll key={faq.q} delay={index * 80}>
-              <div className="glass-card-solid rounded-[28px] p-5 h-full border border-white/10">
-                <h4 className="font-display font-semibold text-base mb-2 text-navy-dark">
-                  {faq.q}
-                </h4>
-                <p className="text-sm text-navy-dark/65 leading-relaxed">
-                  {faq.a}
                 </p>
               </div>
             </RevealOnScroll>
