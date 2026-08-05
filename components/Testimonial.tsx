@@ -41,11 +41,11 @@ export default function Testimonial() {
           {testimonials.map((item, index) => (
             <RevealOnScroll key={item.name} delay={index * 120}>
               <blockquote className="group glass-card glass-hover rounded-[28px] p-7 md:p-8 h-full border border-[#2945a2]/10 shadow-[0_24px_70px_rgba(23,40,80,0.08)] relative overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(79,111,211,0.16),_transparent_45%)] opacity-70" />
+                <div className="absolute inset-0 bg-navy/10 opacity-70" />
                 <div className="relative">
                   <div className="mb-5 flex items-center gap-2 text-[#4f6fd3]">
                     <span className="text-3xl font-semibold">“</span>
-                    <span className="h-2 w-16 rounded-full bg-gradient-to-r from-[#2945a2] to-[#4f6fd3]" />
+                    <span className="h-2 w-16 rounded-full bg-[#2945A2]" />
                   </div>
                   <p className="text-lg leading-relaxed text-navy-dark/75">
                     {item.quote}

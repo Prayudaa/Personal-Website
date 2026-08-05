@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PROJECTS } from "@/lib/data";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
@@ -30,16 +31,19 @@ export default function Portfolio() {
                 <div className="h-44 border-b border-white/10 relative overflow-hidden bg-[#102040]">
                   {project.image ? (
                     <>
-                      <img
-                        src={project.image}
-                        alt={`Screenshot ${project.title}`}
-                        className="absolute inset-0 h-full w-full object-cover"
-                      />
+                      <div className="absolute inset-0">
+                        <Image
+                          src={project.image}
+                          alt={`Screenshot ${project.title}`}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
                       <div className="absolute inset-0 bg-navy/25" />
                     </>
                   ) : (
-                    <div className="h-full bg-gradient-to-br from-[#102040] via-[#13264f] to-[#283d70] flex items-center justify-center px-4 text-center">
-                      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(138,164,255,0.18),_transparent_45%)]" />
+                    <div className="h-full bg-[#102040] flex items-center justify-center px-4 text-center">
+                      <div className="absolute inset-0 bg-navy/10" />
                       <div className="relative z-10 space-y-2">
                         <p className="text-sm font-semibold text-white/85">
                           Preview tidak tersedia

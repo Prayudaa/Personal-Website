@@ -9,7 +9,7 @@ export default function About() {
           {/* Foto */}
           <RevealOnScroll className="mx-auto md:mx-0">
             <div className="glass-card w-56 h-56 md:w-64 md:h-64 rounded-[32px] flex items-center justify-center p-5">
-              <div className="flex h-full w-full flex-col items-center justify-center rounded-[26px] border border-navy/10 bg-[linear-gradient(135deg,rgba(41,69,162,0.12),rgba(255,255,255,0.4))] text-center">
+              <div className="flex h-full w-full flex-col items-center justify-center rounded-[26px] border border-navy/10 bg-navy/10 text-center">
                 <div className="mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-navy text-xl font-bold text-bg shadow-lg shadow-navy/20">
                   P
                 </div>

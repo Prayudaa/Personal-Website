@@ -41,7 +41,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="cta-primary group relative overflow-hidden rounded-full px-7 py-4 text-base font-display font-semibold text-white shadow-[0_20px_50px_rgba(41,69,162,0.28)]"
                 >
-                  <span className="absolute inset-0 bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.24),transparent)] translate-x-[-120%] transition-transform duration-700 group-hover:translate-x-[120%]" />
+                  
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     <MessageCircle size={20} strokeWidth={2} />
                     Konsultasi Gratis
@@ -86,9 +86,9 @@ export default function Hero() {
 
           <RevealOnScroll delay={240}>
             <div className="relative">
-              <div className="absolute inset-0 rounded-[32px] bg-gradient-to-br from-navy/20 via-white to-accent-light/40 blur-3xl animate-pulse" />
+              <div className="absolute inset-0 rounded-[32px] bg-navy/10 blur-3xl animate-pulse" />
               <div className="relative glass-card rounded-[32px] p-6 md:p-8 shadow-[0_30px_80px_rgba(15,27,61,0.10)] border border-navy/10 overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(41,69,162,0.12),_transparent_45%)]" />
+                <div className="absolute inset-0 bg-navy/10" />
                 <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-accent-light/25 blur-2xl" />
                 <div className="relative flex items-center justify-between mb-6">
                   <div>
