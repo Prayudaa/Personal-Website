@@ -42,7 +42,7 @@ export default function Header() {
         </div>
 
         <button
-          className="md:hidden glass-card p-2 rounded-xl text-navy-dark transition-transform duration-200 active:scale-95 bg-[rgba(255,255,255,0.08)] border border-white/10"
+            className="md:hidden glass-card p-2 rounded-xl text-navy-dark transition-transform duration-200 active:scale-95 bg-[rgba(255,255,255,0.08)] border border-white/10"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Tutup menu" : "Buka menu"}
           aria-expanded={open}

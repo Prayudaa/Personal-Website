@@ -12,9 +12,11 @@
   --color-bg: #fbf7f4;
   --color-navy: #2945a2;
   --color-navy-dark: #172850;
+  --color-navy-rgb: 41, 69, 162;
+  --color-navy-dark-rgb: 23, 40, 80;
   --color-glass: rgba(255, 255, 255, 0.64);
   --color-glass-strong: rgba(255, 255, 255, 0.82);
-  --color-glass-border: rgba(41, 69, 162, 0.16);
+  --color-glass-border: rgba(var(--color-navy-rgb), 0.16);
   --color-accent-light: #4f6fd3;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -142,7 +144,7 @@ h1, h2, h3, h4, .font-display {
 .glass-card {
   background: rgba(255,255,255,0.92);
   border: 2px solid var(--color-navy);
-  box-shadow: 8px 8px 0 rgba(41,69,162,0.12);
+  box-shadow: 8px 8px 0 rgba(var(--color-navy-rgb), 0.12);
   position: relative;
   overflow: hidden;
 }
@@ -158,15 +160,15 @@ h1, h2, h3, h4, .font-display {
 .glass-card-solid {
   background: rgba(255,255,255,0.98);
   border: 2px solid var(--color-navy);
-  box-shadow: 6px 6px 0 rgba(41,69,162,0.12);
+  box-shadow: 6px 6px 0 rgba(var(--color-navy-rgb), 0.12);
 }
 
 .glass-nav {
   background: rgba(251, 247, 244, 0.76);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(41, 69, 162, 0.1);
-  box-shadow: 0 12px 30px rgba(23, 40, 80, 0.05);
+  border-bottom: 1px solid rgba(var(--color-navy-rgb), 0.1);
+  box-shadow: 0 12px 30px rgba(var(--color-navy-dark-rgb), 0.05);
 }
 
 .glass-hover {
@@ -176,7 +178,7 @@ h1, h2, h3, h4, .font-display {
 .cta-primary {
   background: var(--color-navy);
   color: #fbf7f4;
-  border: 2px solid rgba(41,69,162,0.15);
+  border: 2px solid rgba(var(--color-navy-rgb), 0.15);
   position: relative;
   overflow: hidden;
 }
@@ -193,7 +195,7 @@ h1, h2, h3, h4, .font-display {
 
 .glass-hover:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 20px 50px rgba(15, 27, 61, 0.16);
+  box-shadow: 0 20px 50px rgba(var(--color-navy-dark-rgb), 0.16);
   background: rgba(255, 255, 255, 0.78);
   filter: saturate(1.06);
 }

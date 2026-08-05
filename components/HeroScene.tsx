@@ -23,7 +23,7 @@ export default function HeroScene() {
           top: mousePos.y,
           width: 220,
           height: 220,
-          background: 'rgba(41,69,162,0.08)'
+          background: 'rgba(var(--color-navy-rgb), 0.08)'
         }}
       />
       <div className="absolute inset-0 bg-navy/6 animate-[gradientShift_8s_ease_infinite]" />
@@ -37,7 +37,7 @@ export default function HeroScene() {
       <div className="absolute right-[20%] top-[24%] h-14 w-14 rounded-full border border-navy/20 animate-[floatOrb_5s_ease-in-out_infinite_0.6s]" />
       <div className="absolute bottom-[22%] left-[30%] h-12 w-12 rounded-full border border-navy/20 animate-[floatOrb_4.8s_ease-in-out_infinite_1.2s]" />
 
-      <div className="absolute left-[50%] top-[50%] h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-navy/10 shadow-[0_0_50px_rgba(41,69,162,0.16)]" />
+      <div className="absolute left-[50%] top-[50%] h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-navy/10 shadow-[0_0_50px_rgba(var(--color-navy-rgb),0.16)]" />
       <div className="absolute left-[50%] top-[50%] h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/70 bg-white/70" />
     </div>
   );

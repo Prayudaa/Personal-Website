@@ -27,7 +27,7 @@ export default function Portfolio() {
         <div className="grid md:grid-cols-3 gap-6">
           {PROJECTS.map((project, index) => (
             <RevealOnScroll key={project.slug} delay={index * 120}>
-              <article className="glass-card glass-hover rounded-[28px] overflow-hidden flex flex-col h-full border border-navy/10 shadow-[0_18px_45px_rgba(15,27,61,0.08)]">
+              <article className="glass-card glass-hover rounded-[28px] overflow-hidden flex flex-col h-full border border-navy/10 shadow-[0_18px_45px_rgba(var(--color-navy-dark-rgb),0.08)]">
                 <div className="h-44 border-b border-white/10 relative overflow-hidden bg-navy-dark">
                   {project.image ? (
                     <>

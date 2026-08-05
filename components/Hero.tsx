@@ -39,7 +39,7 @@ export default function Hero() {
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cta-primary group relative overflow-hidden rounded-full px-7 py-4 text-base font-display font-semibold text-white shadow-[0_20px_50px_rgba(41,69,162,0.28)]"
+                  className="cta-primary group relative overflow-hidden rounded-full px-7 py-4 text-base font-display font-semibold text-white shadow-[0_20px_50px_rgba(var(--color-navy-rgb),0.28)]"
                 >
                   
                   <span className="relative z-10 flex items-center justify-center gap-2">
