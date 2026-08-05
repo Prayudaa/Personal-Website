@@ -4,7 +4,7 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Contact() {
   return (
-    <section id="kontak" className="relative overflow-hidden bg-[linear-gradient(135deg,_#132b3d_0%,_#234b63_100%)] section-shell py-16 md:py-24">
+    <section id="kontak" className="relative overflow-hidden section-shell py-16 md:py-24 bg-[#fbf7f4]">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] items-center">
           <div>
@@ -23,7 +23,7 @@ export default function Contact() {
             </RevealOnScroll>
 
             <RevealOnScroll delay={220}>
-              <div className="mt-10 rounded-[32px] border border-white/10 bg-white/10 p-6 shadow-[0_30px_70px_rgba(15,27,61,0.16)]">
+              <div className="mt-10 rounded-[32px] border-2 border-[#2945A2] bg-[#fbf7f4] p-6 shadow-[8px_8px_0_rgba(41,69,162,0.12)]">
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
                   Chat WhatsApp
                 </p>
@@ -34,7 +34,7 @@ export default function Contact() {
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#2945a2] via-[#4f6fd3] to-[#6f8fe8] px-6 py-3 text-sm font-semibold text-[#fdf9f2] shadow-[0_20px_50px_rgba(41,69,162,0.24)]"
+                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-[#2945A2] px-6 py-3 text-sm font-semibold text-[#fbf7f4] border-2 border-[#2945A2] shadow-[6px_6px_0_rgba(41,69,162,0.16)]"
                 >
                   <MessageCircle size={18} strokeWidth={2} />
                   Hubungi via WhatsApp
@@ -44,7 +44,7 @@ export default function Contact() {
           </div>
 
           <RevealOnScroll delay={180}>
-            <div className="rounded-[32px] border border-white/10 bg-white/10 p-8 shadow-[0_30px_70px_rgba(15,27,61,0.16)]">
+            <div className="rounded-[32px] border-2 border-[#2945A2] bg-[#fbf7f4] p-8 shadow-[8px_8px_0_rgba(41,69,162,0.12)]">
               <div className="space-y-6">
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
@@ -59,7 +59,7 @@ export default function Contact() {
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#2945a2] via-[#4f6fd3] to-[#6f8fe8] px-6 py-3 text-sm font-semibold text-[#fdf9f2] shadow-[0_20px_50px_rgba(41,69,162,0.24)]"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#2945A2] px-6 py-3 text-sm font-semibold text-[#fbf7f4] border-2 border-[#2945A2] shadow-[6px_6px_0_rgba(41,69,162,0.16)]"
                 >
                   <MessageCircle size={18} strokeWidth={2} />
                   Hubungi via WhatsApp
@@ -70,7 +70,7 @@ export default function Contact() {
                   <div className="mt-4 space-y-3">
                     <a
                       href="mailto:prayuda040305@gmail.com"
-                      className="flex items-center gap-2 rounded-3xl border border-white/10 bg-navy/70 px-4 py-3 hover:border-accent-light"
+                      className="flex items-center gap-2 rounded-3xl border-2 border-[#2945A2] bg-[#2945A2]/90 px-4 py-3 text-[#fbf7f4] hover:border-[#4f6fd3]"
                     >
                       <Mail size={16} />
                       prayuda040305@gmail.com
@@ -79,7 +79,7 @@ export default function Contact() {
                       href="https://www.instagram.com/pr4yuda._/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 rounded-3xl border border-white/10 bg-navy/70 px-4 py-3 hover:border-accent-light"
+                      className="flex items-center gap-2 rounded-3xl border-2 border-[#2945A2] bg-[#2945A2]/90 px-4 py-3 text-[#fbf7f4] hover:border-[#4f6fd3]"
                     >
                       <AtSign size={16} />
                       @pr4yuda._
