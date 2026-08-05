@@ -12,12 +12,12 @@ export default function Contact() {
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light/80">
                 Kontak
               </p>
-              <h2 className="font-display font-bold text-3xl md:text-5xl max-w-2xl leading-tight text-bg text-glow mt-3">
+              <h2 className="font-display font-bold text-3xl md:text-5xl max-w-2xl leading-tight text-navy-dark text-glow mt-3">
                 Ayo diskusikan website yang membuat bisnis kamu terlihat lebih profesional.
               </h2>
             </RevealOnScroll>
             <RevealOnScroll delay={120}>
-              <p className="mt-6 text-bg/60 max-w-xl leading-relaxed">
+              <p className="mt-6 text-navy-dark/70 max-w-xl leading-relaxed">
                 Isi form ini atau langsung chat WhatsApp untuk dapat ide konsep, estimasi harga, dan langkah selanjutnya tanpa biaya.
               </p>
             </RevealOnScroll>
@@ -27,7 +27,7 @@ export default function Contact() {
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
                   Chat WhatsApp
                 </p>
-                <p className="mt-2 text-sm text-bg/70">
+                <p className="mt-2 text-sm text-navy-dark/70">
                   Lebih cepat dan cocok untuk diskusi awal, clarifikasi kebutuhan, dan penjadwalan.
                 </p>
                 <a
@@ -65,8 +65,8 @@ export default function Contact() {
                   Hubungi via WhatsApp
                 </a>
 
-                <div className="text-sm text-bg/60">
-                  <p className="font-semibold text-bg">Alternatif kontak</p>
+                <div className="text-sm text-navy-dark/60">
+                  <p className="font-semibold text-navy-dark">Alternatif kontak</p>
                   <div className="mt-4 space-y-3">
                     <a
                       href="mailto:prayuda040305@gmail.com"
