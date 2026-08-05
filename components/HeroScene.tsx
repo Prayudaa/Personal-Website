@@ -26,7 +26,7 @@ export default function HeroScene() {
           background: 'rgba(var(--color-navy-rgb), 0.08)'
         }}
       />
-      <div className="absolute inset-0 bg-navy/6 animate-[gradientShift_8s_ease_infinite]" />
+      <div className="absolute inset-0 bg-navy/6" />
 
       <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-navy/15" />
       <div className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full border border-navy/10" />
