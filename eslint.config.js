@@ -1,3 +1,3 @@
 module.exports = {
-  ignores: ["**/.github/**"]
+  ignores: ["**/.github/**", "**/.next/**", "**/node_modules/**"]
 };
