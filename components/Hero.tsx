@@ -87,7 +87,7 @@ export default function Hero() {
           <RevealOnScroll delay={240}>
             <div className="relative">
               <div className="absolute inset-0 rounded-[32px] bg-navy/10 blur-3xl animate-pulse" />
-              <div className="relative glass-card rounded-[32px] p-6 md:p-8 shadow-[0_30px_80px_rgba(15,27,61,0.10)] border border-navy/10 overflow-hidden">
+              <div className="relative glass-card rounded-[32px] p-6 md:p-8 shadow-[0_30px_80px_rgba(var(--color-navy-dark-rgb),0.10)] border border-navy/10 overflow-hidden">
                 <div className="absolute inset-0 bg-navy/10" />
                 <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-accent-light/25 blur-2xl" />
                 <div className="relative flex items-center justify-between mb-6">

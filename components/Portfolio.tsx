@@ -85,7 +85,7 @@ export default function Portfolio() {
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-5 inline-flex items-center justify-center rounded-full cta-primary px-4 py-3 text-sm font-semibold transition-all duration-300 hover:-translate-y-1 shadow-[6px_6px_0_rgba(41,69,162,0.12)]"
+                      className="mt-5 inline-flex items-center justify-center rounded-full cta-primary px-4 py-3 text-sm font-semibold transition-all duration-300 hover:-translate-y-1 shadow-[6px_6px_0_rgba(var(--color-navy-rgb),0.12)]"
                     >
                       Lihat Project
                     </a>

@@ -15,9 +15,9 @@ export default function HeroScene() {
   }, []);
 
   return (
-    <div className="relative h-[320px] w-full overflow-hidden rounded-[32px] border border-navy/10 bg-white/60 p-4 shadow-[0_24px_70px_rgba(15,27,61,0.12)]">
+    <div className="relative h-[320px] w-full overflow-hidden rounded-[32px] border border-navy/10 bg-white/60 p-4 shadow-[0_24px_70px_rgba(var(--color-navy-dark-rgb),0.12)]">
       <div
-        className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 rounded-full blur-[40px]"
+        className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 rounded-full blur-[20px]"
           style={{
           left: mousePos.x,
           top: mousePos.y,
