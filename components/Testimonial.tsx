@@ -24,7 +24,7 @@ export default function Testimonial() {
         <RevealOnScroll>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#4f6fd3]">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
                 Testimonial
               </p>
               <h2 className="font-display font-bold text-3xl md:text-4xl text-navy-dark mt-2 text-glow">
@@ -43,7 +43,7 @@ export default function Testimonial() {
               <blockquote className="group glass-card glass-hover rounded-[28px] p-7 md:p-8 h-full border border-navy/10 shadow-[0_24px_70px_rgba(23,40,80,0.08)] relative overflow-hidden">
                 <div className="absolute inset-0 bg-navy/10 opacity-70" />
                 <div className="relative">
-                  <div className="mb-5 flex items-center gap-2 text-[#4f6fd3]">
+                  <div className="mb-5 flex items-center gap-2 text-accent-light">
                     <span className="text-3xl font-semibold">“</span>
                     <span className="h-2 w-16 rounded-full bg-navy" />
                   </div>
@@ -53,7 +53,7 @@ export default function Testimonial() {
                   <p className="mt-4 text-sm font-medium text-navy">
                     {item.accent}
                   </p>
-                  <footer className="mt-6 flex items-center justify-between gap-3 border-t border-[#2945a2]/10 pt-4">
+                  <footer className="mt-6 flex items-center justify-between gap-3 border-t border-navy/10 pt-4">
                     <div>
                       <div className="font-display font-semibold text-lg text-navy-dark">
                         {item.name}
