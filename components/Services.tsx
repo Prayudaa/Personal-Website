@@ -39,7 +39,7 @@ export default function Services() {
                 <div
                 className={`rounded-[28px] p-6 flex flex-col h-full border ${
                   service.highlight
-                    ? "border-2 border-[#2945A2] bg-[#2945A2] text-[#fbf7f4] shadow-[6px_6px_0_rgba(41,69,162,0.16)] md:-translate-y-3"
+                    ? "border-2 border-navy bg-navy text-bg shadow-neubrutal md:-translate-y-3"
                     : "border-navy/10 glass-card text-navy-dark"
                 }`}
               >
@@ -83,8 +83,8 @@ export default function Services() {
                   rel="noopener noreferrer"
                   className={`glass-hover text-center font-display font-semibold px-5 py-3 rounded-full text-sm transition-all duration-300 ${
                     service.highlight
-                      ? "bg-[#fbf7f4] text-[#172850]"
-                      : "bg-[#2945a2] text-[#fbf7f4]"
+                      ? "bg-bg text-navy-dark"
+                      : "bg-navy text-bg"
                   }`}
                 >
                   Tanya Paket Ini

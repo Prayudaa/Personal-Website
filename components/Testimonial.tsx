@@ -40,17 +40,17 @@ export default function Testimonial() {
         <div className="grid md:grid-cols-2 gap-6">
           {testimonials.map((item, index) => (
             <RevealOnScroll key={item.name} delay={index * 120}>
-              <blockquote className="group glass-card glass-hover rounded-[28px] p-7 md:p-8 h-full border border-[#2945a2]/10 shadow-[0_24px_70px_rgba(23,40,80,0.08)] relative overflow-hidden">
+              <blockquote className="group glass-card glass-hover rounded-[28px] p-7 md:p-8 h-full border border-navy/10 shadow-[0_24px_70px_rgba(23,40,80,0.08)] relative overflow-hidden">
                 <div className="absolute inset-0 bg-navy/10 opacity-70" />
                 <div className="relative">
                   <div className="mb-5 flex items-center gap-2 text-[#4f6fd3]">
                     <span className="text-3xl font-semibold">“</span>
-                    <span className="h-2 w-16 rounded-full bg-[#2945A2]" />
+                    <span className="h-2 w-16 rounded-full bg-navy" />
                   </div>
-                  <p className="text-lg leading-relaxed text-navy-dark/75">
+                  <p className="text-lg leading-relaxed text-navy/75">
                     {item.quote}
                   </p>
-                  <p className="mt-4 text-sm font-medium text-[#2945a2]">
+                  <p className="mt-4 text-sm font-medium text-navy">
                     {item.accent}
                   </p>
                   <footer className="mt-6 flex items-center justify-between gap-3 border-t border-[#2945a2]/10 pt-4">
@@ -60,7 +60,7 @@ export default function Testimonial() {
                       </div>
                       <div className="text-sm text-navy-dark/60 mt-1">{item.role}</div>
                     </div>
-                    <div className="rounded-full border border-[#2945a2]/10 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-[#2945a2]">
+                    <div className="rounded-full border border-navy/10 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-navy">
                       Trusted
                     </div>
                   </footer>
