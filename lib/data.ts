@@ -8,7 +8,6 @@ export const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Tentang", href: "#tentang" },
   { label: "Portofolio", href: "#portofolio" },
-  { label: "Skill", href: "#skill" },
   { label: "Layanan", href: "#layanan" },
   { label: "Kontak", href: "#kontak" },
 ];
