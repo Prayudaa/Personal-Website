@@ -17,9 +17,13 @@ export default function HeroScene() {
   return (
     <div className="relative h-[320px] w-full overflow-hidden rounded-[32px] border border-navy/10 bg-white/60 p-4 shadow-[0_24px_70px_rgba(15,27,61,0.12)]">
       <div
-        className="absolute inset-0 transition-all duration-500 ease-out"
+        className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 rounded-full blur-[40px]"
         style={{
-          background: `radial-gradient(circle at ${mousePos.x}px ${mousePos.y}px, rgba(140,160,217,0.28), transparent 35%)`,
+          left: mousePos.x,
+          top: mousePos.y,
+          width: 220,
+          height: 220,
+          background: 'rgba(41,69,162,0.08)'
         }}
       />
       <div className="absolute inset-0 bg-navy/6 animate-[gradientShift_8s_ease_infinite]" />
