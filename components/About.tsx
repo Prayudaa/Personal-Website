@@ -43,7 +43,7 @@ export default function About() {
                   { value: "1 hari", label: "Balasan rata-rata" },
                   { value: "100%", label: "Konsultasi gratis" },
                 ].map((stat) => (
-                  <div key={stat.label} className="rounded-3xl border border-white/10 bg-[rgba(255,255,255,0.06)] px-4 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
+                  <div key={stat.label} className="rounded-3xl border border-white/10 bg-glass-06 px-4 py-3 shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
                     <div className="font-display font-bold text-xl text-navy-dark">{stat.value}</div>
                     <div className="text-sm text-navy-dark/60">{stat.label}</div>
                   </div>

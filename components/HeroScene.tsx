@@ -18,7 +18,7 @@ export default function HeroScene() {
     <div className="relative h-[320px] w-full overflow-hidden rounded-[32px] border border-navy/10 bg-white/60 p-4 shadow-[0_24px_70px_rgba(15,27,61,0.12)]">
       <div
         className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 rounded-full blur-[40px]"
-        style={{
+          style={{
           left: mousePos.x,
           top: mousePos.y,
           width: 220,
@@ -30,8 +30,8 @@ export default function HeroScene() {
 
       <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-navy/15" />
       <div className="absolute left-1/2 top-1/2 h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full border border-navy/10" />
-      <div className="absolute left-[18%] top-[22%] h-20 w-20 rounded-full bg-navy/10 blur-2xl" />
-      <div className="absolute right-[12%] bottom-[16%] h-24 w-24 rounded-full bg-accent-light/30 blur-3xl" />
+        <div className="absolute left-[18%] top-[22%] h-20 w-20 rounded-full bg-navy/10 blur-xl" />
+        <div className="absolute right-[12%] bottom-[16%] h-24 w-24 rounded-full bg-accent-light/30 blur-2xl" />
 
       <div className="absolute left-[24%] top-[28%] h-16 w-16 rounded-full border border-navy/20 animate-[floatOrb_4s_ease-in-out_infinite]" />
       <div className="absolute right-[20%] top-[24%] h-14 w-14 rounded-full border border-navy/20 animate-[floatOrb_5s_ease-in-out_infinite_0.6s]" />

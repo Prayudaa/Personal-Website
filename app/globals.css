@@ -204,6 +204,14 @@ h1, h2, h3, h4, .font-display {
   animation: bounceSoft 0.7s ease-in-out;
 }
 
+/* Semantic glass background utilities (centralized rgba usage) */
+.bg-glass-04 { background: rgba(255,255,255,0.04); }
+.bg-glass-05 { background: rgba(255,255,255,0.05); }
+.bg-glass-06 { background: rgba(255,255,255,0.06); }
+.bg-glass-08 { background: rgba(255,255,255,0.08); }
+.bg-glass-72 { background: rgba(255,255,255,0.72); }
+.bg-dark-overlay { background: rgba(7,11,22,0.95); }
+
 @keyframes bounceSoft {
   0%, 100% {
     transform: translateY(0);
