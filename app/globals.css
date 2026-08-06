@@ -200,6 +200,15 @@ h1, h2, h3, h4, .font-display {
   filter: saturate(1.06);
 }
 
+.cta-primary:hover,
+.cta-primary:focus-visible {
+  background: var(--color-navy-dark);
+  border-color: var(--color-accent-light);
+  color: var(--color-bg);
+  box-shadow: 8px 8px 0 rgba(var(--color-navy-dark-rgb), 0.24);
+  filter: none;
+}
+
 .glass-hover:hover .icon-bounce {
   animation: bounceSoft 0.7s ease-in-out;
 }
@@ -209,6 +218,7 @@ h1, h2, h3, h4, .font-display {
 .bg-glass-05 { background: rgba(255,255,255,0.05); }
 .bg-glass-06 { background: rgba(255,255,255,0.06); }
 .bg-glass-08 { background: rgba(255,255,255,0.08); }
+.bg-glass-12 { background: rgba(255,255,255,0.12); }
 .bg-glass-72 { background: rgba(255,255,255,0.72); }
 .bg-dark-overlay { background: rgba(7,11,22,0.95); }
 
