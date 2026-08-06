@@ -17,7 +17,7 @@ export default function Contact() {
               </h2>
             </RevealOnScroll>
             <RevealOnScroll delay={120}>
-              <p className="mt-6 text-navy-dark/70 max-w-xl leading-relaxed">
+              <p className="mt-6 text-navy-dark/92 max-w-xl leading-relaxed">
                 Isi form ini atau langsung chat WhatsApp untuk dapat ide konsep, estimasi harga, dan langkah selanjutnya tanpa biaya.
               </p>
             </RevealOnScroll>
@@ -27,7 +27,7 @@ export default function Contact() {
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
                   Chat WhatsApp
                 </p>
-                <p className="mt-2 text-sm text-navy-dark/70">
+                <p className="mt-2 text-sm text-navy-dark/85">
                   Lebih cepat dan cocok untuk diskusi awal, clarifikasi kebutuhan, dan penjadwalan.
                 </p>
                 <a
@@ -65,7 +65,7 @@ export default function Contact() {
                   Hubungi via WhatsApp
                 </a>
 
-                <div className="text-sm text-navy-dark/60">
+                <div className="text-sm text-navy-dark/80">
                   <p className="font-semibold text-navy-dark">Alternatif kontak</p>
                   <div className="mt-4 space-y-3">
                     <a
