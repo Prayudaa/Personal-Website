@@ -23,7 +23,7 @@ export default function Contact() {
             </RevealOnScroll>
 
             <RevealOnScroll delay={220}>
-              <div className="mt-10 rounded-[32px] border-2 border-navy-dark bg-glass-12 p-6 shadow-neubrutal transition duration-200 ease-out hover:-translate-y-0.5 hover:border-navy/70 hover:bg-glass-14 hover:shadow-[10px_10px_0_rgba(var(--color-navy-dark-rgb),0.16)]">
+              <div className="mt-10 rounded-[32px] border-2 border-navy-dark bg-glass-12 p-6 shadow-[10px_10px_0_rgba(var(--color-navy-dark-rgb),0.14)] transition duration-200 ease-out hover:-translate-y-1 hover:border-navy/70 hover:bg-glass-14 hover:shadow-[12px_12px_0_rgba(var(--color-navy-dark-rgb),0.18)]">
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
                   Chat WhatsApp
                 </p>
@@ -34,7 +34,7 @@ export default function Contact() {
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-bg border-2 border-navy shadow-neubrutal"
+                  className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-navy px-7 py-3.5 text-sm font-semibold text-bg border-2 border-navy shadow-neubrutal transition duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[8px_8px_0_rgba(var(--color-navy-dark-rgb),0.18)]"
                 >
                   <MessageCircle size={18} strokeWidth={2} />
                   Hubungi via WhatsApp
@@ -44,7 +44,7 @@ export default function Contact() {
           </div>
 
           <RevealOnScroll delay={180}>
-            <div className="rounded-[32px] border-2 border-navy-dark bg-glass-12 p-8 shadow-neubrutal transition duration-200 ease-out hover:-translate-y-0.5 hover:border-navy/70 hover:bg-glass-14 hover:shadow-[10px_10px_0_rgba(var(--color-navy-dark-rgb),0.16)]">
+            <div className="rounded-[32px] border-2 border-navy-dark bg-glass-12 p-8 shadow-[10px_10px_0_rgba(var(--color-navy-dark-rgb),0.14)] transition duration-200 ease-out hover:-translate-y-1 hover:border-navy/70 hover:bg-glass-14 hover:shadow-[12px_12px_0_rgba(var(--color-navy-dark-rgb),0.18)]">
               <div className="space-y-6">
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
@@ -59,7 +59,7 @@ export default function Contact() {
                   href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-navy px-6 py-3 text-sm font-semibold text-bg border-2 border-navy shadow-neubrutal"
+                  className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-navy px-7 py-3.5 text-sm font-semibold text-bg border-2 border-navy shadow-neubrutal transition duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[8px_8px_0_rgba(var(--color-navy-dark-rgb),0.18)]"
                 >
                   <MessageCircle size={18} strokeWidth={2} />
                   Hubungi via WhatsApp
