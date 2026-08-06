@@ -50,7 +50,7 @@ export default function Contact() {
                   <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
                     Hubungi langsung
                   </p>
-                  <p className="mt-2 text-sm text-bg/70 leading-relaxed">
+                  <p className="mt-2 text-sm text-navy-dark/92 leading-relaxed">
                     Tidak perlu form. Langsung chat WhatsApp untuk diskusi cepat, atau hubungi email dan Instagram jika kamu ingin kirim brief terlebih dahulu.
                   </p>
                 </div>
