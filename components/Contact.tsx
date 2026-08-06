@@ -23,7 +23,7 @@ export default function Contact() {
             </RevealOnScroll>
 
             <RevealOnScroll delay={220}>
-              <div className="mt-10 rounded-[32px] border-2 border-navy-dark bg-glass-12 p-6 shadow-neubrutal">
+              <div className="mt-10 rounded-[32px] border-2 border-navy-dark bg-glass-12 p-6 shadow-neubrutal transition-colors duration-200 hover:border-navy/70">
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
                   Chat WhatsApp
                 </p>
@@ -44,7 +44,7 @@ export default function Contact() {
           </div>
 
           <RevealOnScroll delay={180}>
-            <div className="rounded-[32px] border-2 border-navy-dark bg-glass-12 p-8 shadow-neubrutal">
+            <div className="rounded-[32px] border-2 border-navy-dark bg-glass-12 p-8 shadow-neubrutal transition-colors duration-200 hover:border-navy/70">
               <div className="space-y-6">
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
