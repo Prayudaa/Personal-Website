@@ -29,6 +29,15 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "s.wordpress.com",
+        pathname: "/mshots/**",
+      },
+    ],
+  },
   async headers() {
     return [
       {
@@ -40,3 +49,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+

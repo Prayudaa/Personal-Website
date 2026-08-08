@@ -1,8 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import { PROJECTS } from "@/lib/data";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Portfolio() {
+  const featuredProjects = PROJECTS.filter((p) => p.featured);
+
   return (
     <section id="portofolio" className="mesh-bg section-shell py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
@@ -25,7 +28,7 @@ export default function Portfolio() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {PROJECTS.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <RevealOnScroll key={project.slug} delay={index * 120}>
               <article className="glass-card glass-hover rounded-[28px] overflow-hidden flex flex-col h-full border border-navy/10 shadow-[0_18px_45px_rgba(var(--color-navy-dark-rgb),0.08)]">
                 <div className="h-44 border-b border-white/10 relative overflow-hidden bg-navy-dark">
@@ -94,6 +97,15 @@ export default function Portfolio() {
               </article>
             </RevealOnScroll>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/portfolio"
+            className="inline-flex items-center justify-center rounded-full glass-card px-8 py-4 text-sm font-semibold text-navy-dark transition-all duration-300 hover:bg-navy-dark hover:text-white shadow-sm border border-navy/10 hover:-translate-y-1"
+          >
+            Lihat Semua Proyek &rarr;
+          </Link>
         </div>
       </div>
     </section>

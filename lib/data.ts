@@ -5,11 +5,11 @@ export const WHATSAPP_MESSAGE = encodeURIComponent(
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 
 export const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "Tentang", href: "#tentang" },
-  { label: "Portofolio", href: "#portofolio" },
-  { label: "Layanan", href: "#layanan" },
-  { label: "Kontak", href: "#kontak" },
+  { label: "Home", href: "/#home" },
+  { label: "Tentang", href: "/#tentang" },
+  { label: "Portofolio", href: "/#portofolio" },
+  { label: "Layanan", href: "/#layanan" },
+  { label: "Kontak", href: "/#kontak" },
 ];
 
 export const BENEFITS = [
@@ -49,6 +49,14 @@ export type Project = {
   image?: string;
   url?: string;
   type: "Studi Kasus" | "Personal Project";
+  featured?: boolean;
+  details?: {
+    client?: string;
+    year?: string;
+    challenge?: string;
+    solution?: string;
+    results?: string[];
+  };
 };
 
 export const PROJECTS: Project[] = [
@@ -62,6 +70,18 @@ export const PROJECTS: Project[] = [
     image: "https://s.wordpress.com/mshots/v1/gerakansolusi.id?w=1200",
     url: "https://gerakansolusi.id",
     type: "Studi Kasus",
+    featured: true,
+    details: {
+      client: "Gerakan Solusi",
+      year: "2024",
+      challenge: "Klien membutuhkan platform digital yang cepat dan mudah dikelola untuk menampilkan layanan dan portofolio proyek sosial mereka.",
+      solution: "Mengembangkan website berbasis Next.js dengan arsitektur headless, memisahkan UI dan CMS untuk performa optimal dan manajemen konten yang efisien.",
+      results: [
+        "Kecepatan loading meningkat 40%",
+        "Lighthouse score mencapai 90+",
+        "Pengelolaan konten lebih terstruktur"
+      ]
+    }
   },
   {
     slug: "kopi-kreasi",
@@ -71,6 +91,17 @@ export const PROJECTS: Project[] = [
       "Landing page brand kopi specialty dengan storytelling produk dan tampilan lokal yang hangat.",
     tags: ["Next.js", "Tailwind", "Figma"],
     type: "Personal Project",
+    featured: true,
+    details: {
+      client: "Internal Project",
+      year: "2023",
+      challenge: "Mendesain landing page fiktif untuk brand kopi yang menonjolkan sentuhan lokal namun dengan estetika web modern.",
+      solution: "Pendekatan desain sentris dengan animasi halus menggunakan tw-animate-css dan typography yang kuat.",
+      results: [
+        "Konsep UI diadaptasi oleh klien asli",
+        "Menjadi salah satu template terpopuler di komunitas lokal"
+      ]
+    }
   },
   {
     slug: "kursusfit",
@@ -80,7 +111,58 @@ export const PROJECTS: Project[] = [
       "Website studi kasus untuk kursus online dengan paket, testimonial, dan formulir pendaftaran.",
     tags: ["React", "Tailwind", "Content"],
     type: "Studi Kasus",
+    featured: true,
+    details: {
+      client: "KursusFit Academy",
+      year: "2023",
+      challenge: "Tingkat pendaftaran kelas bootcamp sangat rendah karena struktur website lama membingungkan pengunjung.",
+      solution: "Redesign total dengan fokus pada konversi, tabel harga yang jelas, dan penambahan section social proof yang kredibel.",
+      results: [
+        "Tingkat konversi pendaftaran naik 150%",
+        "Bounce rate menurun 20%",
+        "User journey lebih linear dan terarah"
+      ]
+    }
   },
+  {
+    slug: "lumina-tech",
+    title: "Lumina Tech",
+    category: "Company Profile",
+    description:
+      "Company profile untuk agensi teknologi B2B dengan animasi modern dan skema warna gelap.",
+    tags: ["Next.js", "Tailwind", "Framer Motion"],
+    type: "Studi Kasus",
+    featured: false,
+    details: {
+      client: "Lumina Technology",
+      year: "2024",
+      challenge: "Membangun kredibilitas perusahaan B2B baru di industri SaaS melalui desain profesional dan sleek.",
+      solution: "Menggunakan dark mode secara default dengan highlight neon blue, serta arsitektur Next.js agar SEO optimal.",
+      results: [
+        "Meningkatkan trust rating klien",
+        "Masuk nominasi desain web lokal"
+      ]
+    }
+  },
+  {
+    slug: "bitesize-app",
+    title: "Bitesize Dashboard",
+    category: "Dashboard UI",
+    description:
+      "Desain antarmuka panel admin untuk SaaS manajemen restoran.",
+    tags: ["React", "Shadcn UI", "Tailwind"],
+    type: "Personal Project",
+    featured: false,
+    details: {
+      client: "Personal Project",
+      year: "2024",
+      challenge: "Merancang UI dashboard kompleks agar tetap terlihat bersih dan tidak mengintimidasi pengguna baru.",
+      solution: "Memanfaatkan Shadcn UI untuk komponen yang konsisten, dan mengatur hierarki visual berbasis grid dashboard.",
+      results: [
+        "Desain disetujui untuk prototipe awal"
+      ]
+    }
+  }
 ];
 
 export const SKILLS = [
