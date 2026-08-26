@@ -18,11 +18,11 @@ export default function Metrics() {
             <RevealOnScroll key={m.label} delay={i * 70}>
               <div className={`p-6 h-full flex flex-col min-h-[160px] ${i === 1 ? "bg-ink text-white" : i === 2 ? "bg-swiss-red text-white" : "bg-white"}`}>
                 <div className="flex items-center justify-between">
-                  <span className={`font-mono text-[10px] tracking-[0.14em] ${i === 1 || i === 2 ? "text-white/60" : "text-zinc-400"}`}>0{i + 1} — {m.label.toUpperCase()}</span>
-                  <span className={`h-7 w-7 rounded-full flex items-center justify-center text-[14px] border ${i === 1 || i === 2 ? "border-white/15 bg-white/10" : "border-line bg-muted"}`}>{m.icon}</span>
+                  <span className={`font-mono text-[10px] tracking-[0.14em] ${i === 1 ? "text-white/70" : i === 2 ? "text-white" : "text-zinc-500"}`}>0{i + 1} — {m.label.toUpperCase()}</span>
+                  <span className={`h-7 w-7 rounded-full flex items-center justify-center text-[14px] border ${i === 1 || i === 2 ? "border-white/20 bg-white/10" : "border-line bg-muted"}`}>{m.icon}</span>
                 </div>
                 <div className={`swiss-num text-4xl mt-5 ${i === 1 || i === 2 ? "text-white" : "text-ink"}`}>{m.value}</div>
-                <p className={`text-[13px] leading-relaxed mt-2 flex-1 ${i === 1 || i === 2 ? "text-white/70" : "text-zinc-500"}`}>{m.description}</p>
+                <p className={`text-[13px] leading-relaxed mt-2 flex-1 ${i === 1 ? "text-white/85" : i === 2 ? "text-white" : "text-zinc-600"}`}>{m.description}</p>
               </div>
             </RevealOnScroll>
           ))}

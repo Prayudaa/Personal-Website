@@ -13,7 +13,7 @@ export default function Contact() {
               <h2 className="font-display font-bold text-2xl md:text-[32px] leading-[0.95] tracking-[-0.03em]">
                 Ayo diskusikan website yang
                 <br />
-                <span className="text-zinc-400 font-mono font-medium tracking-[-0.02em]">membuat bisnis kamu</span> terlihat lebih profesional.
+                <span className="text-zinc-500 font-mono font-medium tracking-[-0.02em]">membuat bisnis kamu</span> terlihat lebih profesional.
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-zinc-500 max-w-xl">Isi form ini atau langsung chat WhatsApp untuk dapat ide konsep, estimasi harga, dan langkah selanjutnya tanpa biaya.</p>
             </RevealOnScroll>
@@ -31,33 +31,33 @@ export default function Contact() {
               </div>
             </RevealOnScroll>
 
-            <div className="mt-auto pt-6 flex items-center gap-3 font-mono text-[10px] tracking-[0.12em] text-zinc-400 border-t border-line mt-6">
+            <div className="mt-auto pt-6 flex items-center gap-3 font-mono text-[10px] tracking-[0.12em] text-zinc-500 border-t border-line mt-6">
               <span>RESPONSE &lt; 24H</span><span className="h-1 w-1 rounded-full bg-line" /><span>GRATIS KONSULTASI</span>
             </div>
           </div>
 
           <RevealOnScroll delay={140}>
             <div className="bg-ink text-white p-6 md:p-8 flex flex-col h-full">
-              <span className="font-mono text-[10px] tracking-[0.14em] text-white/50">HUBUNGI LANGSUNG</span>
-              <p className="mt-3 text-sm leading-relaxed text-white/60">Tidak perlu form. Langsung chat WhatsApp untuk diskusi cepat, atau hubungi email dan Instagram jika kamu ingin kirim brief terlebih dahulu.</p>
+              <span className="font-mono text-[10px] tracking-[0.14em] text-white/70">HUBUNGI LANGSUNG</span>
+              <p className="mt-3 text-sm leading-relaxed text-white/85">Tidak perlu form. Langsung chat WhatsApp untuk diskusi cepat, atau hubungi email dan Instagram jika kamu ingin kirim brief terlebih dahulu.</p>
 
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-white text-ink px-6 py-3 font-mono text-xs tracking-[0.08em] hover:bg-zinc-100 transition-colors">
                 <MessageCircle size={16} /> WHATSAPP <ArrowUpRight size={14} />
               </a>
 
               <div className="mt-8">
-                <p className="font-mono text-[10px] tracking-[0.14em] text-white/40">ALTERNATIF KONTAK</p>
+                <p className="font-mono text-[10px] tracking-[0.14em] text-white/60">ALTERNATIF KONTAK</p>
                 <div className="mt-3 space-y-2">
-                  <a href="mailto:prayuda040305@gmail.com" className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 font-mono text-xs hover:bg-white/10 transition-colors">
-                    <Mail size={14} className="text-white/60" /> prayuda040305@gmail.com
+                  <a href="mailto:prayuda040305@gmail.com" className="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 font-mono text-xs hover:bg-white/15 transition-colors">
+                    <Mail size={14} className="text-white" /> prayuda040305@gmail.com
                   </a>
-                  <a href="https://www.instagram.com/pr4yuda._/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 font-mono text-xs hover:bg-white/10 transition-colors">
-                    <AtSign size={14} className="text-white/60" /> @pr4yuda._
+                  <a href="https://www.instagram.com/pr4yuda._/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 font-mono text-xs hover:bg-white/15 transition-colors">
+                    <AtSign size={14} className="text-white" /> @pr4yuda._
                   </a>
                 </div>
               </div>
 
-              <div className="mt-auto pt-8 flex items-center justify-between font-mono text-[10px] tracking-[0.12em] text-white/30">
+              <div className="mt-auto pt-8 flex items-center justify-between font-mono text-[10px] tracking-[0.12em] text-white/60">
                 <span>SEMARANG · INDONESIA</span><span>© 2026</span>
               </div>
             </div>

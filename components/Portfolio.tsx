@@ -29,7 +29,7 @@ export default function Portfolio() {
                     </>
                   ) : (
                     <div className="h-full flex items-center justify-center bg-muted">
-                      <span className="font-mono text-xs tracking-[0.12em] text-zinc-400">NO PREVIEW</span>
+                      <span className="font-mono text-xs tracking-[0.12em] text-zinc-600">NO PREVIEW</span>
                     </div>
                   )}
                   <div className="absolute left-3 top-3 flex gap-1.5">
@@ -39,14 +39,14 @@ export default function Portfolio() {
                 </div>
                 <div className="p-5 flex flex-col flex-1">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-[10px] tracking-[0.12em] text-zinc-400">0{i + 1} / {p.category.toUpperCase()}</span>
+                    <span className="font-mono text-[10px] tracking-[0.12em] text-zinc-500">0{i + 1} / {p.category.toUpperCase()}</span>
                     <span className="h-px flex-1 bg-line" />
                   </div>
                   <h3 className="font-display font-bold text-[18px] leading-tight mt-2 tracking-tight">{p.title}</h3>
                   <p className="text-[13px] leading-relaxed text-zinc-500 mt-2 flex-1">{p.description}</p>
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {p.tags.map((t) => (
-                      <span key={t} className="font-mono text-[10px] tracking-[0.08em] border border-line bg-muted px-2 py-1 rounded-full">{t.toUpperCase()}</span>
+                      <span key={t} className="font-mono text-[10px] tracking-[0.08em] border border-line bg-muted text-zinc-600 px-2 py-1 rounded-full">{t.toUpperCase()}</span>
                     ))}
                   </div>
                   {p.url && (

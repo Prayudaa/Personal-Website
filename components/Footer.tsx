@@ -6,7 +6,7 @@ export default function Footer() {
           <span className="h-6 w-6 rounded-full bg-ink text-white flex items-center justify-center font-bold">BY</span>
           <span>© {new Date().getFullYear()} BYPRAYUDA — SEMARANG, INDONESIA</span>
         </div>
-        <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-400">
+        <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-500">
           <span>WEBSITE CUSTOM & PROFESIONAL</span>
           <span className="h-1 w-1 rounded-full bg-line" />
           <span>DIBANGUN DENGAN NEXT.JS</span>

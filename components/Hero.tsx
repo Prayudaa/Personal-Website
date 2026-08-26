@@ -21,7 +21,7 @@ export default function Hero() {
           <div className="col-span-12 lg:col-span-8 bg-white p-6 md:p-8 lg:p-10 flex flex-col">
             <RevealOnScroll>
               <div className="inline-flex items-center gap-2 self-start rounded-full border border-line bg-white px-3 py-1.5">
-                <Grid3X3 size={14} className="text-zinc-400" />
+                <Grid3X3 size={14} className="text-zinc-500" />
                 <span className="font-mono text-[10px] tracking-[0.14em] text-zinc-600">JASA PEMBUATAN WEBSITE — COMPANY PROFILE & TOKO ONLINE</span>
               </div>
             </RevealOnScroll>
@@ -30,7 +30,7 @@ export default function Hero() {
               <h1 className="mt-6 font-display font-bold text-[34px] sm:text-[42px] lg:text-[52px] leading-[0.95] tracking-[-0.04em] text-ink">
                 Website profesional
                 <br />
-                <span className="font-mono font-medium tracking-[-0.03em] text-zinc-400">yang menanamkan</span>
+                <span className="font-mono font-medium tracking-[-0.03em] text-zinc-500">yang menanamkan</span>
                 <br />
                 <span className="inline-block bg-ink text-white px-2.5 py-1 text-[1em] leading-none mt-1">kepercayaan</span>
                 <span className="text-swiss-red">.</span>
@@ -66,7 +66,7 @@ export default function Hero() {
                 <div className="h-8 w-8 rounded-full border border-white bg-ink flex items-center justify-center text-white font-mono text-[10px]">10+</div>
               </div>
               <p className="font-mono text-[11px] leading-tight text-zinc-500">Dipercaya bisnis & UMKM<br /><span className="text-ink font-semibold">4.9/5 rating kepuasan</span></p>
-              <div className="ml-auto hidden sm:flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-400">
+              <div className="ml-auto hidden sm:flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-500">
                 <span>SYSTEM</span><span className="h-1 w-1 rounded-full bg-swiss-red" /><span>ONLINE</span>
               </div>
             </div>
@@ -78,12 +78,12 @@ export default function Hero() {
             <div className="bg-white p-6 flex flex-col">
               <div className="flex items-center justify-between">
                 <span className="swiss-label">EXPERIENCE / INDEX</span>
-                <span className="font-mono text-[10px] text-zinc-400">[ 01 — 04 ]</span>
+                <span className="font-mono text-[10px] text-zinc-500">[ 01 — 04 ]</span>
               </div>
               <div className="mt-4 grid grid-cols-2 gap-3">
                 <div className="rounded-2xl border border-line bg-muted p-4">
-                  <div className="swiss-num text-3xl">10+</div>
-                  <div className="font-mono text-[10px] tracking-[0.12em] text-zinc-500 mt-1">PROJECT SELESAI</div>
+                  <div className="swiss-num text-3xl text-ink">10+</div>
+                  <div className="font-mono text-[10px] tracking-[0.12em] text-zinc-600 mt-1">PROJECT SELESAI</div>
                 </div>
                 <div className="rounded-2xl border border-line bg-ink p-4 text-white">
                   <div className="swiss-num text-3xl">1<span className="text-swiss-red">d</span></div>
@@ -91,7 +91,7 @@ export default function Hero() {
                 </div>
                 <div className="rounded-2xl border border-line bg-white p-4 col-span-2 flex items-center justify-between">
                   <div>
-                    <div className="font-mono text-[10px] tracking-[0.14em] text-zinc-400">STACK</div>
+                    <div className="font-mono text-[10px] tracking-[0.14em] text-zinc-500">STACK</div>
                     <div className="font-mono text-xs mt-1 text-ink">NEXT.JS · TS · TAILWIND</div>
                   </div>
                   <div className="h-9 w-9 rounded-full bg-muted border border-line flex items-center justify-center font-mono text-[10px]">↗</div>
@@ -112,15 +112,15 @@ export default function Hero() {
                 <div className="h-16 rounded-xl bg-ink border border-ink" />
                 <div className="h-16 rounded-xl bg-white border border-line" />
                 <div className="col-span-2 h-20 rounded-xl bg-white border border-line p-3 flex flex-col justify-between">
-                  <span className="font-mono text-[9px] tracking-[0.12em] text-zinc-400">STRUCTURE</span>
+                  <span className="font-mono text-[9px] tracking-[0.12em] text-zinc-500">STRUCTURE</span>
                   <span className="font-display font-bold text-sm leading-none">Rapi & konsisten</span>
                 </div>
                 <div className="h-20 rounded-xl bg-swiss-red border border-swiss-red p-3 flex flex-col justify-between text-white">
-                  <span className="font-mono text-[9px] tracking-[0.12em] text-white/70">GROWTH</span>
+                  <span className="font-mono text-[9px] tracking-[0.12em] text-white">GROWTH</span>
                   <span className="font-display font-bold text-sm leading-none">Siap scale</span>
                 </div>
               </div>
-              <div className="relative mt-4 flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-500">
+              <div className="relative mt-4 flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-600">
                 <span className="h-px flex-1 bg-line" /> SWISS — BENTO GRID
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function Hero() {
           <div className="flex items-center gap-3 font-mono text-[11px] text-zinc-500 whitespace-nowrap overflow-x-auto scrollbar-none">
             <span>COMPANY PROFILE</span><span className="h-1 w-1 rounded-full bg-line" /><span>TOKO ONLINE</span><span className="h-1 w-1 rounded-full bg-line" /><span>CUSTOM PROJECT</span><span className="h-1 w-1 rounded-full bg-line" /><span>LANDING PAGE</span><span className="h-1 w-1 rounded-full bg-line" /><span>DASHBOARD</span>
           </div>
-          <span className="ml-auto hidden md:inline font-mono text-[10px] tracking-[0.12em] text-zinc-400">— 2026 EDITION</span>
+          <span className="ml-auto hidden md:inline font-mono text-[10px] tracking-[0.12em] text-zinc-500">— 2026 EDITION</span>
         </div>
       </div>
     </section>

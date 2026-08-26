@@ -18,7 +18,7 @@ export default function Testimonial() {
             <RevealOnScroll key={item.name} delay={idx * 80}>
               <blockquote className="bg-white p-7 md:p-8 h-full flex flex-col">
                 <div className="flex items-center justify-between">
-                  <span className="font-mono text-[10px] tracking-[0.14em] text-zinc-400">QUOTE 0{idx + 1}</span>
+                  <span className="font-mono text-[10px] tracking-[0.14em] text-zinc-500">QUOTE 0{idx + 1}</span>
                   <span className="rounded-full bg-ink text-white font-mono text-[10px] tracking-[0.12em] px-2.5 py-1">TRUSTED</span>
                 </div>
                 <p className="mt-6 font-display font-medium text-[18px] leading-relaxed tracking-tight text-ink">“{item.quote}”</p>

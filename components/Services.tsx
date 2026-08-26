@@ -12,7 +12,7 @@ export default function Services() {
             <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mt-2">Pilih paket sesuai kebutuhan</h2>
             <p className="text-sm text-zinc-500 mt-2 max-w-lg">Transparan, sistematis, dan siap scale sesuai kebutuhan bisnis kamu.</p>
           </div>
-          <div className="hidden md:flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-400">
+          <div className="hidden md:flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-500">
             <span>3 TIERS</span><span className="h-px w-8 bg-line" /><span>SWISS GRID</span>
           </div>
         </div>
@@ -38,11 +38,11 @@ export default function Services() {
             <RevealOnScroll key={s.name} delay={idx * 80}>
               <div className={`p-6 md:p-7 flex flex-col h-full min-h-[420px] ${s.highlight ? "bg-ink text-white" : "bg-white text-ink"}`}>
                 <div className="flex items-center justify-between">
-                  <span className={`font-mono text-[10px] tracking-[0.14em] ${s.highlight ? "text-white/50" : "text-zinc-400"}`}>0{idx + 1} — {s.highlight ? "POPULAR" : "TIER"}</span>
+                  <span className={`font-mono text-[10px] tracking-[0.14em] ${s.highlight ? "text-white/80" : "text-zinc-500"}`}>0{idx + 1} — {s.highlight ? "POPULAR" : "TIER"}</span>
                   {s.highlight && <span className="rounded-full bg-swiss-red text-white font-mono text-[10px] tracking-[0.12em] px-2.5 py-1">PALING DIMINATI</span>}
                 </div>
                 <h3 className="font-display font-bold text-xl mt-4 tracking-tight">{s.name}</h3>
-                <p className={`text-[13px] leading-relaxed mt-2 ${s.highlight ? "text-white/60" : "text-zinc-500"}`}>{s.desc}</p>
+                <p className={`text-[13px] leading-relaxed mt-2 ${s.highlight ? "text-white/85" : "text-zinc-600"}`}>{s.desc}</p>
                 <div className={`mt-4 font-display font-bold text-[18px] tracking-tight ${s.highlight ? "text-white" : "text-ink"}`}>{s.price}</div>
                 <div className={`mt-5 h-px ${s.highlight ? "bg-white/10" : "bg-line"}`} />
                 <ul className="space-y-2.5 mt-5 flex-1">

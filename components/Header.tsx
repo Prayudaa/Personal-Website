@@ -32,7 +32,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <span className="font-mono text-[10px] tracking-[0.14em] text-zinc-400 hidden lg:block">INDEX 2026 / 01</span>
+          <span className="font-mono text-[10px] tracking-[0.14em] text-zinc-500 hidden lg:block">INDEX 2026 / 01</span>
           <a
             href={WHATSAPP_LINK}
             target="_blank"
