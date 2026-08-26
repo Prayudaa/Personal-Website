@@ -24,8 +24,8 @@ const config: Config = {
         mono: ["var(--font-mono)", "monospace"],
       },
       boxShadow: {
-        neubrutal: "6px 6px 0 rgba(10,10,10,0.08)",
-        bento: "0 1px 2px rgba(0,0,0,0.04)",
+        neubrutal: "6px 6px 0 rgba(41,69,162,0.12)",
+        bento: "0 1px 2px rgba(23,40,80,0.06)",
       },
     },
   },

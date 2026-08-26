@@ -26,16 +26,19 @@ Website dirancang modern, cepat, dan responsif dengan arsitektur modular berbasi
 
 ## 🎨 Design System — Bento Grid Swiss
 
-Palet & token didefinisikan di `app/globals.css:7`:
+Palet dikembalikan ke warna awal (navy/cream) tapi layout tetap Bento Swiss — didefinisikan di `app/globals.css:7`:
 
 | Token | Value | Penggunaan |
 |-------|-------|------------|
-| `--color-bg` | `#FCFCF9` | Background utama |
-| `--color-ink` | `#0A0A0A` | Teks & CTA primer |
-| `--color-line` | `#E7E7E2` | Border bento (1px) |
+| `--color-bg` | `#fbf7f4` | Background utama (cream) |
+| `--color-navy` | `#2945a2` | Primer |
+| `--color-navy-dark` | `#172850` | Teks/ink & CTA primer |
+| `--color-ink` | `#172850` | Alias navy-dark |
+| `--color-line` | `rgba(41,69,162,0.12)` | Border bento (1px) |
 | `--color-surface` | `#FFFFFF` | Kartu bento |
-| `--color-muted` | `#F4F4F0` | Kartu muted / tag |
-| `--color-swiss-red` | `#E30613` | Aksen Swiss |
+| `--color-muted` | `#F4EFE9` | Kartu muted / tag |
+| `--color-accent-light` | `#4f6fd3` | Aksen |
+| `--color-swiss-red` | `#4f6fd3` | Alias aksen (kompatibilitas Swiss) |
 
 Primitif:
 - `.bento-card` — kartu putih `border 1px var(--color-line)` `rounded 20px`
@@ -138,7 +141,7 @@ npm run start
 
 ## 📝 Changelog
 
-- **2026.08 — feat: Bento Grid Swiss** — redesign tokens, Hero/About/Metrics/Portfolio/Services/Process/Testimonial/Contact/Header/Footer ke bento Swiss; tambah `JetBrains Mono`; tambah route `/portfolio` & `/portfolio/[slug]` + sitemap dinamis; override glass ke border tipis.
+- **2026.08 — feat: Bento Grid Swiss (navy/cream)** — redesign ke layout bento Swiss sambil mempertahankan palet awal navy `#2945a2` / `#172850` + cream `#fbf7f4` + aksen `#4f6fd3`; tambah `JetBrains Mono`; sitemap dinamis.
 - **2026.08 — feat: portfolio** — listing & detail slug page.
 
 ---

@@ -9,24 +9,25 @@
   --font-body: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  /* Swiss palette - Bento Grid */
-  --color-bg: #FCFCF9;
-  --color-ink: #0A0A0A;
-  --color-ink-soft: #52525B;
-  --color-line: #E7E7E2;
-  --color-line-strong: #D4D4D0;
+  /* Bento Grid Swiss — palet dikembalikan ke warna awal (navy/cream) */
+  --color-bg: #fbf7f4;
+  --color-ink: #172850;
+  --color-ink-soft: #5b6a8a;
+  --color-line: rgba(41, 69, 162, 0.12);
+  --color-line-hex: #E2E6F3;
+  --color-line-strong: rgba(41, 69, 162, 0.18);
   --color-surface: #FFFFFF;
-  --color-muted: #F4F4F0;
-  --color-navy: #0A0A0A;
-  --color-navy-dark: #0A0A0A;
-  --color-navy-rgb: 10, 10, 10;
-  --color-navy-dark-rgb: 10, 10, 10;
-  --color-accent: #FF3B30;
-  --color-accent-light: #FF3B30;
-  --color-swiss-red: #E30613;
-  --color-glass: rgba(255,255,255,1);
-  --color-glass-strong: rgba(255,255,255,1);
-  --color-glass-border: #E7E7E2;
+  --color-muted: #F4EFE9;
+  --color-navy: #2945a2;
+  --color-navy-dark: #172850;
+  --color-navy-rgb: 41, 69, 162;
+  --color-navy-dark-rgb: 23, 40, 80;
+  --color-accent: #4f6fd3;
+  --color-accent-light: #4f6fd3;
+  --color-swiss-red: #4f6fd3;
+  --color-glass: rgba(255, 255, 255, 0.92);
+  --color-glass-strong: rgba(255, 255, 255, 0.98);
+  --color-glass-border: rgba(41, 69, 162, 0.12);
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.12 0 0);
@@ -141,8 +142,8 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; font-weight: 700;
   position: relative;
 }
 .bento-card--muted { background: var(--color-muted); }
-.bento-card--ink { background: var(--color-ink); color: #FCFCF9; border-color: #1A1A1A; }
-.bento-card--accent { background: var(--color-swiss-red); color: white; border-color: #C80511; }
+.bento-card--ink { background: var(--color-navy-dark); color: #fbf7f4; border-color: var(--color-navy-dark); }
+.bento-card--accent { background: var(--color-accent-light); color: #fbf7f4; border-color: var(--color-accent-light); }
 
 .bento-border { border: 1px solid var(--color-line); }
 .bento-divider { border-color: var(--color-line); }
@@ -161,11 +162,11 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; font-weight: 700;
   box-shadow: none;
 }
 .glass-nav {
-  background: rgba(252,252,249,0.86);
+  background: rgba(251, 247, 244, 0.86);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--color-line);
-  box-shadow: none;
+  box-shadow: 0 12px 30px rgba(var(--color-navy-dark-rgb), 0.05);
 }
 .glass-hover { transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
 .glass-hover:hover {
@@ -176,20 +177,20 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; font-weight: 700;
   filter: none;
 }
 .cta-primary {
-  background: var(--color-ink);
-  color: #FCFCF9;
-  border: 1px solid var(--color-ink);
+  background: var(--color-navy);
+  color: #fbf7f4;
+  border: 1px solid var(--color-navy);
   position: relative;
   overflow: hidden;
 }
 .cta-primary:hover, .cta-primary:focus-visible {
-  background: #1A1A1A;
-  border-color: #1A1A1A;
-  color: #FCFCF9;
+  background: var(--color-navy-dark);
+  border-color: var(--color-navy-dark);
+  color: #fbf7f4;
   box-shadow: none;
   filter: none;
 }
-.cta-primary--alt { background: var(--color-swiss-red); color: white; border-color: var(--color-swiss-red); }
+.cta-primary--alt { background: #f4d193; color: #132b3d; border-color: #f4d193; }
 .cta-secondary {
   border: 1px solid var(--color-line-strong);
   background: var(--color-surface);
