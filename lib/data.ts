@@ -289,3 +289,30 @@ export const METRICS = [
     description: "Pengalaman kerja yang menunjukkan kemampuan untuk menyelesaikan berbagai kebutuhan bisnis.",
   },
 ];
+
+export type Testimonial = {
+  id: string;
+  quote: string;
+  name: string;
+  role: string;
+  accent: string;
+};
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: "rina-putri",
+    quote:
+      "Prosesnya jelas, komunikasinya nyaman, dan hasil website-nya terasa benar-benar custom.",
+    name: "Rina Putri",
+    role: "Pemilik UMKM Fashion",
+    accent: "Dari konsep sampai launch, semuanya terasa terarah dan profesional.",
+  },
+  {
+    id: "dimas-arga",
+    quote:
+      "Saya suka detail desainnya. Website terasa profesional dan cocok banget untuk brand saya.",
+    name: "Dimas Arga",
+    role: "Founder Studio Kreatif",
+    accent: "Visual yang premium, pesan yang kuat, dan pengalaman pengguna yang nyaman.",
+  },
+];

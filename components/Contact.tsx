@@ -1,91 +1,64 @@
-import { MessageCircle, AtSign, Mail } from "lucide-react";
+import { MessageCircle, Mail, AtSign, ArrowUpRight } from "lucide-react";
 import { WHATSAPP_LINK } from "@/lib/data";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Contact() {
   return (
-    <section id="kontak" className="relative overflow-hidden section-shell py-16 md:py-24 bg-bg">
+    <section id="kontak" className="border-b border-line bg-bg py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] items-center">
-          <div>
+        <span className="swiss-label">— KONTAK [ 08 ]</span>
+        <div className="mt-6 grid gap-[1px] bg-line border border-line rounded-[24px] overflow-hidden p-[1px] lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="bg-white p-6 md:p-8 flex flex-col">
             <RevealOnScroll>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light/80">
-                Kontak
-              </p>
-              <h2 className="font-display font-bold text-3xl md:text-5xl max-w-2xl leading-tight text-navy-dark text-glow mt-3">
-                Ayo diskusikan website yang membuat bisnis kamu terlihat lebih profesional.
+              <h2 className="font-display font-bold text-2xl md:text-[32px] leading-[0.95] tracking-[-0.03em]">
+                Ayo diskusikan website yang
+                <br />
+                <span className="text-zinc-400 font-mono font-medium tracking-[-0.02em]">membuat bisnis kamu</span> terlihat lebih profesional.
               </h2>
-            </RevealOnScroll>
-            <RevealOnScroll delay={120}>
-              <p className="mt-6 text-navy-dark/92 max-w-xl leading-relaxed">
-                Isi form ini atau langsung chat WhatsApp untuk dapat ide konsep, estimasi harga, dan langkah selanjutnya tanpa biaya.
-              </p>
+              <p className="mt-4 text-sm leading-relaxed text-zinc-500 max-w-xl">Isi form ini atau langsung chat WhatsApp untuk dapat ide konsep, estimasi harga, dan langkah selanjutnya tanpa biaya.</p>
             </RevealOnScroll>
 
-            <RevealOnScroll delay={220}>
-              <div className="mt-10 rounded-[32px] border-2 border-navy-dark bg-glass-12 p-6 shadow-[10px_10px_0_rgba(var(--color-navy-dark-rgb),0.14)] transition duration-200 ease-out hover:-translate-y-1 hover:border-navy/70 hover:bg-glass-14 hover:shadow-[12px_12px_0_rgba(var(--color-navy-dark-rgb),0.18)]">
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
-                  Chat WhatsApp
-                </p>
-                <p className="mt-2 text-sm text-navy-dark/85">
-                  Lebih cepat dan cocok untuk diskusi awal, clarifikasi kebutuhan, dan penjadwalan.
-                </p>
-                <a
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-navy px-7 py-3.5 text-sm font-semibold text-bg border-2 border-navy shadow-neubrutal transition duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[8px_8px_0_rgba(var(--color-navy-dark-rgb),0.18)]"
-                >
-                  <MessageCircle size={18} strokeWidth={2} />
-                  Hubungi via WhatsApp
+            <RevealOnScroll delay={120}>
+              <div className="mt-8 rounded-2xl border border-line bg-muted p-6">
+                <div className="flex items-center justify-between">
+                  <span className="swiss-label">CHAT WHATSAPP</span>
+                  <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                </div>
+                <p className="mt-2 text-sm text-zinc-600">Lebih cepat dan cocok untuk diskusi awal, clarifikasi kebutuhan, dan penjadwalan.</p>
+                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex items-center gap-2 rounded-full bg-ink text-white px-6 py-3 font-mono text-xs tracking-[0.08em] hover:bg-zinc-800 transition-colors">
+                  <MessageCircle size={16} /> HUBUNGI VIA WHATSAPP <ArrowUpRight size={14} />
                 </a>
               </div>
             </RevealOnScroll>
+
+            <div className="mt-auto pt-6 flex items-center gap-3 font-mono text-[10px] tracking-[0.12em] text-zinc-400 border-t border-line mt-6">
+              <span>RESPONSE &lt; 24H</span><span className="h-1 w-1 rounded-full bg-line" /><span>GRATIS KONSULTASI</span>
+            </div>
           </div>
 
-          <RevealOnScroll delay={180}>
-            <div className="rounded-[32px] border-2 border-navy-dark bg-glass-12 p-8 shadow-[10px_10px_0_rgba(var(--color-navy-dark-rgb),0.14)] transition duration-200 ease-out hover:-translate-y-1 hover:border-navy/70 hover:bg-glass-14 hover:shadow-[12px_12px_0_rgba(var(--color-navy-dark-rgb),0.18)]">
-              <div className="space-y-6">
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
-                    Hubungi langsung
-                  </p>
-                  <p className="mt-2 text-sm text-navy-dark/92 leading-relaxed">
-                    Tidak perlu form. Langsung chat WhatsApp untuk diskusi cepat, atau hubungi email dan Instagram jika kamu ingin kirim brief terlebih dahulu.
-                  </p>
-                </div>
+          <RevealOnScroll delay={140}>
+            <div className="bg-ink text-white p-6 md:p-8 flex flex-col h-full">
+              <span className="font-mono text-[10px] tracking-[0.14em] text-white/50">HUBUNGI LANGSUNG</span>
+              <p className="mt-3 text-sm leading-relaxed text-white/60">Tidak perlu form. Langsung chat WhatsApp untuk diskusi cepat, atau hubungi email dan Instagram jika kamu ingin kirim brief terlebih dahulu.</p>
 
-                <a
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-navy px-7 py-3.5 text-sm font-semibold text-bg border-2 border-navy shadow-neubrutal transition duration-200 ease-out hover:-translate-y-0.5 hover:shadow-[8px_8px_0_rgba(var(--color-navy-dark-rgb),0.18)]"
-                >
-                  <MessageCircle size={18} strokeWidth={2} />
-                  Hubungi via WhatsApp
-                </a>
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center justify-center gap-2 rounded-full bg-white text-ink px-6 py-3 font-mono text-xs tracking-[0.08em] hover:bg-zinc-100 transition-colors">
+                <MessageCircle size={16} /> WHATSAPP <ArrowUpRight size={14} />
+              </a>
 
-                <div className="text-sm text-navy-dark/80">
-                  <p className="font-semibold text-navy-dark">Alternatif kontak</p>
-                  <div className="mt-4 space-y-3">
-                    <a
-                      href="mailto:prayuda040305@gmail.com"
-                      className="flex items-center gap-2 rounded-3xl border-2 border-navy bg-navy/90 px-4 py-3 text-bg hover:border-accent-light"
-                    >
-                      <Mail size={16} />
-                      prayuda040305@gmail.com
-                    </a>
-                    <a
-                      href="https://www.instagram.com/pr4yuda._/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 rounded-3xl border-2 border-navy bg-navy/90 px-4 py-3 text-bg hover:border-accent-light"
-                    >
-                      <AtSign size={16} />
-                      @pr4yuda._
-                    </a>
-                  </div>
+              <div className="mt-8">
+                <p className="font-mono text-[10px] tracking-[0.14em] text-white/40">ALTERNATIF KONTAK</p>
+                <div className="mt-3 space-y-2">
+                  <a href="mailto:prayuda040305@gmail.com" className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 font-mono text-xs hover:bg-white/10 transition-colors">
+                    <Mail size={14} className="text-white/60" /> prayuda040305@gmail.com
+                  </a>
+                  <a href="https://www.instagram.com/pr4yuda._/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 font-mono text-xs hover:bg-white/10 transition-colors">
+                    <AtSign size={14} className="text-white/60" /> @pr4yuda._
+                  </a>
                 </div>
+              </div>
+
+              <div className="mt-auto pt-8 flex items-center justify-between font-mono text-[10px] tracking-[0.12em] text-white/30">
+                <span>SEMARANG · INDONESIA</span><span>© 2026</span>
               </div>
             </div>
           </RevealOnScroll>

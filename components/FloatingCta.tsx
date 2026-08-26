@@ -9,10 +9,10 @@ export default function FloatingCta() {
       href={WHATSAPP_LINK}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-4 right-4 z-40 inline-flex items-center gap-2 rounded-full border-2 border-navy bg-navy px-4 py-3 text-sm font-semibold text-bg shadow-neubrutal transition-all duration-300 hover:-translate-y-1 hover:shadow-[8px_8px_0_rgba(var(--color-navy-rgb),0.2)]"
+      className="fixed bottom-4 right-4 z-40 inline-flex items-center gap-2 rounded-full bg-ink text-white px-4 py-3 font-mono text-xs tracking-[0.08em] border border-ink shadow-[0_8px_24px_rgba(0,0,0,0.18)] hover:bg-zinc-800 transition-colors"
     >
-      <MessageCircle size={18} strokeWidth={2.2} />
-      <span className="hidden sm:inline">Chat WhatsApp</span>
+      <MessageCircle size={16} />
+      <span className="hidden sm:inline">WHATSAPP</span>
       <span className="sm:hidden">WA</span>
     </a>
   );

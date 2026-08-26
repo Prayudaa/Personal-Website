@@ -1,93 +1,62 @@
-import { Check } from "lucide-react";
+import { Check, ArrowUpRight } from "lucide-react";
 import { SERVICES, WHATSAPP_LINK } from "@/lib/data";
 import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Services() {
   return (
-    <section id="layanan" className="mesh-bg section-shell py-16 md:py-24">
+    <section id="layanan" className="border-b border-line bg-bg py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <RevealOnScroll>
-          <h2 className="font-display font-bold text-3xl md:text-4xl mb-3 text-navy-dark">
-            Layanan
-          </h2>
-        </RevealOnScroll>
-        <RevealOnScroll delay={120}>
-          <p className="text-navy-dark/70 max-w-lg mb-10">
-            Pilih paket sesuai kebutuhan, atau diskusikan langsung kalau
-            kebutuhan kamu spesifik.
-          </p>
-        </RevealOnScroll>
-
-        <RevealOnScroll delay={180}>
-          <div className="mb-10 grid sm:grid-cols-3 gap-3">
-            {[
-              { title: "Konsultasi Gratis", desc: "Diskusi pertama tanpa biaya" },
-              { title: "Harga Transparan", desc: "Sesuai scope dan kebutuhan" },
-              { title: "Support Pasca Launch", desc: "Siap bantu setelah website aktif" },
-            ].map((item) => (
-              <div key={item.title} className="rounded-2xl border border-navy/10 bg-white/70 px-4 py-3">
-                <div className="font-display font-semibold text-base text-navy-dark">{item.title}</div>
-                <div className="text-sm text-navy-dark/60 mt-1">{item.desc}</div>
-              </div>
-            ))}
+        <div className="flex items-end justify-between gap-4 mb-6">
+          <div>
+            <span className="swiss-label">— LAYANAN [ 05 ]</span>
+            <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mt-2">Pilih paket sesuai kebutuhan</h2>
+            <p className="text-sm text-zinc-500 mt-2 max-w-lg">Transparan, sistematis, dan siap scale sesuai kebutuhan bisnis kamu.</p>
           </div>
-        </RevealOnScroll>
+          <div className="hidden md:flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-400">
+            <span>3 TIERS</span><span className="h-px w-8 bg-line" /><span>SWISS GRID</span>
+          </div>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-6 items-stretch">
-          {SERVICES.map((service, index) => (
-            <RevealOnScroll key={service.name} delay={index * 100}>
-                <div
-                className={`rounded-[28px] p-6 flex flex-col h-full border ${
-                  service.highlight
-                    ? "border-2 border-navy bg-navy text-bg shadow-neubrutal md:-translate-y-3"
-                    : "border-navy/10 glass-card text-navy-dark"
-                }`}
-              >
-                {service.highlight && (
-                  <span className="self-start bg-accent-light text-navy-dark text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                    Paling Diminati
-                  </span>
-                )}
-                <h3 className="font-display font-bold text-2xl mb-1">
-                  {service.name}
-                </h3>
-                <p
-                  className={`text-sm mb-4 ${
-                    service.highlight ? "text-bg/75" : "text-navy-dark/65"
-                  }`}
-                >
-                  {service.desc}
-                </p>
-                <div className="font-display font-bold text-lg mb-5">
-                  {service.price}
+        <div className="grid gap-2 md:hidden mb-6">
+          {[
+            { t: "Konsultasi Gratis", d: "Diskusi pertama tanpa biaya" },
+            { t: "Harga Transparan", d: "Sesuai scope dan kebutuhan" },
+            { t: "Support Pasca Launch", d: "Siap bantu setelah website aktif" },
+          ].map((it) => (
+            <div key={it.t} className="rounded-2xl border border-line bg-white px-4 py-3 flex items-center justify-between">
+              <div>
+                <div className="font-mono text-[11px] tracking-[0.08em] font-semibold">{it.t.toUpperCase()}</div>
+                <div className="text-xs text-zinc-500">{it.d}</div>
+              </div>
+              <span className="h-6 w-6 rounded-full bg-ink text-white flex items-center justify-center text-xs">↗</span>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-[1px] bg-line border border-line rounded-[24px] overflow-hidden p-[1px]">
+          {SERVICES.map((s, idx) => (
+            <RevealOnScroll key={s.name} delay={idx * 80}>
+              <div className={`p-6 md:p-7 flex flex-col h-full min-h-[420px] ${s.highlight ? "bg-ink text-white" : "bg-white text-ink"}`}>
+                <div className="flex items-center justify-between">
+                  <span className={`font-mono text-[10px] tracking-[0.14em] ${s.highlight ? "text-white/50" : "text-zinc-400"}`}>0{idx + 1} — {s.highlight ? "POPULAR" : "TIER"}</span>
+                  {s.highlight && <span className="rounded-full bg-swiss-red text-white font-mono text-[10px] tracking-[0.12em] px-2.5 py-1">PALING DIMINATI</span>}
                 </div>
-
-                <ul className="space-y-2.5 flex-1 mb-6">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-2 text-sm">
-                      <Check
-                        size={18}
-                        strokeWidth={2.5}
-                        className={`shrink-0 mt-0.5 ${
-                          service.highlight ? "text-accent-light" : "text-navy"
-                        }`}
-                      />
-                      <span>{feature}</span>
+                <h3 className="font-display font-bold text-xl mt-4 tracking-tight">{s.name}</h3>
+                <p className={`text-[13px] leading-relaxed mt-2 ${s.highlight ? "text-white/60" : "text-zinc-500"}`}>{s.desc}</p>
+                <div className={`mt-4 font-display font-bold text-[18px] tracking-tight ${s.highlight ? "text-white" : "text-ink"}`}>{s.price}</div>
+                <div className={`mt-5 h-px ${s.highlight ? "bg-white/10" : "bg-line"}`} />
+                <ul className="space-y-2.5 mt-5 flex-1">
+                  {s.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2.5 text-[13px] leading-relaxed">
+                      <span className={`mt-0.5 h-5 w-5 rounded-full flex items-center justify-center shrink-0 ${s.highlight ? "bg-white text-ink" : "bg-ink text-white"}`}>
+                        <Check size={12} strokeWidth={2.5} />
+                      </span>
+                      <span className={s.highlight ? "text-white/85" : "text-zinc-600"}>{f}</span>
                     </li>
                   ))}
                 </ul>
-
-                <a
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`glass-hover text-center font-display font-semibold px-5 py-3 rounded-full text-sm transition-all duration-300 ${
-                    service.highlight
-                      ? "bg-bg text-navy-dark"
-                      : "bg-navy text-bg"
-                  }`}
-                >
-                  Tanya Paket Ini
+                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className={`mt-6 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 font-mono text-xs tracking-[0.08em] transition-colors ${s.highlight ? "bg-white text-ink hover:bg-zinc-100" : "bg-ink text-white hover:bg-zinc-800"}`}>
+                  TANYA PAKET INI <ArrowUpRight size={14} />
                 </a>
               </div>
             </RevealOnScroll>

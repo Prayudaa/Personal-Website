@@ -3,32 +3,29 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Process() {
   return (
-    <section className="mesh-bg section-shell py-16 md:py-24">
+    <section className="border-b border-line bg-bg py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <RevealOnScroll>
-          <h2 className="font-display font-bold text-3xl md:text-4xl mb-3 text-navy-dark">
-            Proses Kerja
-          </h2>
-        </RevealOnScroll>
-        <RevealOnScroll delay={120}>
-          <p className="text-navy-dark/70 max-w-lg mb-10">
-            Cara kerja yang jelas dan sistematis, agar kamu yakin dengan hasil website premium yang akan dibangun.
-          </p>
-        </RevealOnScroll>
+        <div className="flex items-end justify-between gap-4 mb-6">
+          <div>
+            <span className="swiss-label">— PROSES KERJA [ 06 ]</span>
+            <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mt-2">Cara kerja yang jelas & sistematis</h2>
+          </div>
+          <span className="hidden md:inline font-mono text-[10px] tracking-[0.12em] text-zinc-400">4 STEPS — END TO END</span>
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
-          {PROCESS_STEPS.map((item, index) => (
-            <RevealOnScroll key={item.step} delay={index * 90}>
-              <div className="glass-card glass-hover rounded-[28px] p-6 h-full border border-white/10 bg-glass-05 shadow-[0_24px_70px_rgba(var(--color-navy-dark-rgb),0.16)]">
-                <div className="font-display font-bold text-4xl text-accent-light mb-3">
-                  {item.step}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-[1px] bg-line border border-line rounded-[24px] overflow-hidden p-[1px]">
+          {PROCESS_STEPS.map((item, idx) => (
+            <RevealOnScroll key={item.step} delay={idx * 70}>
+              <div className="bg-white p-6 h-full flex flex-col min-h-[200px]">
+                <div className="flex items-start justify-between">
+                  <span className="swiss-num text-4xl text-ink">{item.step}</span>
+                  <span className="font-mono text-[10px] tracking-[0.14em] text-zinc-400 border border-line rounded-full px-2 py-1 bg-muted">STEP {item.step}</span>
                 </div>
-                <h3 className="font-display font-semibold text-lg mb-3 text-navy-dark">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-navy-dark/65 leading-relaxed">
-                  {item.desc}
-                </p>
+                <h3 className="font-display font-semibold text-[16px] mt-6 tracking-tight">{item.title}</h3>
+                <p className="text-[13px] leading-relaxed text-zinc-500 mt-2 flex-1">{item.desc}</p>
+                <div className="mt-4 flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-400">
+                  <span className="h-px flex-1 bg-line" /> 0{idx + 1} / 04
+                </div>
               </div>
             </RevealOnScroll>
           ))}

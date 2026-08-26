@@ -1,77 +1,80 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import Link from "next/link";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 import { NAV_LINKS, WHATSAPP_LINK } from "@/lib/data";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 glass-nav">
-      <div className="mx-auto max-w-6xl px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
-        <a
-          href="#home"
-          className="font-display font-bold text-xl md:text-2xl tracking-tight text-navy-dark transition-all duration-200 hover:text-accent-light"
-        >
-          by<span className="text-accent-light">prayuda</span>
-        </a>
+    <header className="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur-[12px]">
+      <div className="mx-auto max-w-6xl px-5 md:px-8 h-[56px] md:h-[64px] flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-3">
+          <div className="h-8 w-8 rounded-[9px] bg-ink flex items-center justify-center text-white font-mono text-[11px] font-bold tracking-widest">BY</div>
+          <span className="font-display font-bold text-[17px] tracking-tight text-ink">
+            byprayuda<span className="font-mono font-medium text-swiss-red">.co</span>
+          </span>
+          <span className="hidden sm:inline-flex ml-1 rounded-full border border-line bg-white px-2.5 py-1 font-mono text-[10px] leading-none tracking-[0.12em] text-zinc-500">SEMARANG — ID</span>
+        </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-1">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="font-medium text-sm text-navy-dark/70 hover:text-navy transition-all duration-200 hover:-translate-y-0.5"
+              className="font-mono text-[11px] tracking-[0.12em] text-zinc-500 hover:text-ink px-3 py-1.5 rounded-full hover:bg-white border border-transparent hover:border-line transition-colors"
             >
-              {link.label}
+              {link.label.toUpperCase()}
             </a>
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <span className="font-mono text-[10px] tracking-[0.14em] text-zinc-400 hidden lg:block">INDEX 2026 / 01</span>
           <a
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-hover cta-primary text-bg font-display font-semibold px-5 py-2.5 rounded-full flex items-center gap-2 text-sm shadow-neubrutal hover:bg-navy-dark hover:border-accent-light hover:shadow-[8px_8px_0_rgba(var(--color-navy-dark-rgb),0.28)] hover:text-bg"
+            className="inline-flex items-center gap-2 bg-ink text-white font-mono text-[11px] tracking-[0.08em] px-4 py-2.5 rounded-full hover:bg-zinc-800 transition-colors"
           >
-            <MessageCircle size={18} strokeWidth={2} />
-            Chat WhatsApp
+            WHATSAPP
+            <ArrowUpRight size={14} />
           </a>
         </div>
 
-          <button
-          className="md:hidden glass-card p-2 rounded-xl text-navy-dark transition-transform duration-200 active:scale-95 bg-glass-08 border border-white/10"
+        <button
+          className="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-full border border-line bg-white text-ink"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Tutup menu" : "Buka menu"}
           aria-expanded={open}
+          aria-controls="mobile-nav"
         >
-          {open ? <X size={22} /> : <Menu size={22} />}
+          {open ? <X size={18} /> : <Menu size={18} />}
         </button>
       </div>
 
       {open && (
-        <div className="md:hidden glass-nav border-t border-navy/10">
-          <nav className="flex flex-col px-5 py-4 gap-1">
+        <div className="md:hidden border-t border-line bg-bg">
+          <nav id="mobile-nav" className="flex flex-col px-5 py-4">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="font-medium text-base text-navy-dark py-3 border-b border-navy/10 last:border-0"
+                className="font-mono text-[12px] tracking-[0.14em] text-zinc-600 py-4 border-b border-line last:border-0"
               >
-                {link.label}
+                {link.label.toUpperCase()}
               </a>
             ))}
             <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-navy text-bg font-display font-semibold px-5 py-3 rounded-full flex items-center justify-center gap-2 text-sm mt-4 shadow-md shadow-navy/20"
+              className="mt-4 inline-flex items-center justify-center gap-2 bg-ink text-white font-mono text-xs tracking-[0.12em] px-5 py-3 rounded-full"
             >
-              <MessageCircle size={18} strokeWidth={2} />
-              Chat WhatsApp
+              WHATSAPP <ArrowUpRight size={14} />
             </a>
           </nav>
         </div>

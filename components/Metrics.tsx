@@ -3,44 +3,26 @@ import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Metrics() {
   return (
-    <section className="py-16 md:py-24 section-shell bg-glass-04">
+    <section className="border-b border-line bg-bg py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <RevealOnScroll>
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:justify-between mb-12">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light/80">
-                Metrics
-              </p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl text-navy-dark mt-2 text-glow">
-                Angka yang menunjukkan kualitas kerja.
-              </h2>
-            </div>
-            <p className="max-w-xl text-navy-dark/70">
-              Setiap angka ini adalah cerminan layanan yang cepat, rapi, dan berfokus pada hasil bisnis.
-            </p>
+        <div className="flex items-end justify-between gap-4 mb-6">
+          <div>
+            <span className="swiss-label">— METRICS [ 03 ]</span>
+            <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mt-2">Angka yang menunjukkan kualitas.</h2>
           </div>
-        </RevealOnScroll>
+          <p className="hidden md:block max-w-[360px] text-sm leading-relaxed text-zinc-500">Setiap angka adalah cerminan layanan yang cepat, rapi, dan berfokus pada hasil bisnis.</p>
+        </div>
 
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {METRICS.map((metric, index) => (
-            <RevealOnScroll key={metric.label} delay={index * 100}>
-              <div className="glass-card rounded-[26px] border border-white/10 bg-glass-06 p-6 shadow-[0_24px_60px_rgba(var(--color-navy-dark-rgb),0.18)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_30px_80px_rgba(var(--color-navy-dark-rgb),0.22)]">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-accent-light/15 text-accent-light text-xl font-bold">
-                    {metric.icon}
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-navy/60">
-                      {metric.label}
-                    </p>
-                    <p className="font-display font-bold text-3xl text-navy-dark mt-2">
-                      {metric.value}
-                    </p>
-                  </div>
+        <div className="grid gap-[1px] bg-line border border-line rounded-[24px] overflow-hidden p-[1px] sm:grid-cols-2 lg:grid-cols-4">
+          {METRICS.map((m, i) => (
+            <RevealOnScroll key={m.label} delay={i * 70}>
+              <div className={`p-6 h-full flex flex-col min-h-[160px] ${i === 1 ? "bg-ink text-white" : i === 2 ? "bg-swiss-red text-white" : "bg-white"}`}>
+                <div className="flex items-center justify-between">
+                  <span className={`font-mono text-[10px] tracking-[0.14em] ${i === 1 || i === 2 ? "text-white/60" : "text-zinc-400"}`}>0{i + 1} — {m.label.toUpperCase()}</span>
+                  <span className={`h-7 w-7 rounded-full flex items-center justify-center text-[14px] border ${i === 1 || i === 2 ? "border-white/15 bg-white/10" : "border-line bg-muted"}`}>{m.icon}</span>
                 </div>
-                <p className="text-sm leading-relaxed text-navy-dark/70">
-                  {metric.description}
-                </p>
+                <div className={`swiss-num text-4xl mt-5 ${i === 1 || i === 2 ? "text-white" : "text-ink"}`}>{m.value}</div>
+                <p className={`text-[13px] leading-relaxed mt-2 flex-1 ${i === 1 || i === 2 ? "text-white/70" : "text-zinc-500"}`}>{m.description}</p>
               </div>
             </RevealOnScroll>
           ))}

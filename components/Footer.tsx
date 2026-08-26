@@ -1,12 +1,16 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-dark-overlay py-6">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 text-sm text-bg/70 sm:flex-row md:px-8">
-        <span>&copy; {new Date().getFullYear()} byprayuda. Semarang, Indonesia.</span>
-        <div className="flex items-center gap-3">
-          <span>Website custom & profesional</span>
-          <span className="hidden h-1 w-1 rounded-full bg-bg/40 sm:block" />
-          <span>Dibangun dengan Next.js</span>
+    <footer className="bg-bg border-t border-line py-6">
+      <div className="mx-auto max-w-6xl px-5 md:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="flex items-center gap-3 font-mono text-[10px] tracking-[0.12em] text-zinc-500">
+          <span className="h-6 w-6 rounded-full bg-ink text-white flex items-center justify-center font-bold">BY</span>
+          <span>© {new Date().getFullYear()} BYPRAYUDA — SEMARANG, INDONESIA</span>
+        </div>
+        <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.12em] text-zinc-400">
+          <span>WEBSITE CUSTOM & PROFESIONAL</span>
+          <span className="h-1 w-1 rounded-full bg-line" />
+          <span>DIBANGUN DENGAN NEXT.JS</span>
+          <span className="hidden sm:inline-flex ml-2 rounded-full border border-line bg-white px-2 py-1">SYSTEM OK</span>
         </div>
       </div>
     </footer>

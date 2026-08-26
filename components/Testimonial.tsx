@@ -1,69 +1,36 @@
 import RevealOnScroll from "@/components/RevealOnScroll";
-
-const testimonials = [
-  {
-    quote:
-      "Prosesnya jelas, komunikasinya nyaman, dan hasil website-nya terasa benar-benar custom.",
-    name: "Rina Putri",
-    role: "Pemilik UMKM Fashion",
-    accent: "Dari konsep sampai launch, semuanya terasa terarah dan profesional.",
-  },
-  {
-    quote:
-      "Saya suka detail desainnya. Website terasa profesional dan cocok banget untuk brand saya.",
-    name: "Dimas Arga",
-    role: "Founder Studio Kreatif",
-    accent: "Visual yang premium, pesan yang kuat, dan pengalaman pengguna yang nyaman.",
-  },
-];
+import { TESTIMONIALS } from "@/lib/data";
 
 export default function Testimonial() {
   return (
-    <section className="py-16 md:py-24 section-shell">
+    <section className="border-b border-line bg-bg py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
-        <RevealOnScroll>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-light">
-                Testimonial
-              </p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl text-navy-dark mt-2 text-glow">
-                Apa yang klien rasakan
-              </h2>
-            </div>
-            <p className="max-w-xl text-navy-dark/70">
-              Desain yang rapi, komunikasi yang jelas, dan hasil yang siap dipakai untuk membangun kepercayaan pelanggan.
-            </p>
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6">
+          <div>
+            <span className="swiss-label">— TESTIMONIAL [ 07 ]</span>
+            <h2 className="font-display font-bold text-2xl md:text-3xl tracking-tight mt-2">Apa yang klien rasakan</h2>
           </div>
-        </RevealOnScroll>
+          <p className="max-w-xl text-sm text-zinc-500">Desain yang rapi, komunikasi yang jelas, dan hasil yang siap dipakai untuk membangun kepercayaan.</p>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {testimonials.map((item, index) => (
-            <RevealOnScroll key={item.name} delay={index * 120}>
-              <blockquote className="group glass-card glass-hover rounded-[28px] p-7 md:p-8 h-full border border-navy/10 shadow-[0_24px_70px_rgba(var(--color-navy-dark-rgb),0.08)] relative overflow-hidden">
-                <div className="absolute inset-0 bg-navy/10 opacity-70" />
-                <div className="relative">
-                  <div className="mb-5 flex items-center gap-2 text-accent-light">
-                    <span className="text-3xl font-semibold">“</span>
-                    <span className="h-2 w-16 rounded-full bg-navy" />
+        <div className="grid md:grid-cols-2 gap-[1px] bg-line border border-line rounded-[24px] overflow-hidden p-[1px]">
+          {TESTIMONIALS.map((item, idx) => (
+            <RevealOnScroll key={item.name} delay={idx * 80}>
+              <blockquote className="bg-white p-7 md:p-8 h-full flex flex-col">
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[10px] tracking-[0.14em] text-zinc-400">QUOTE 0{idx + 1}</span>
+                  <span className="rounded-full bg-ink text-white font-mono text-[10px] tracking-[0.12em] px-2.5 py-1">TRUSTED</span>
+                </div>
+                <p className="mt-6 font-display font-medium text-[18px] leading-relaxed tracking-tight text-ink">“{item.quote}”</p>
+                <p className="mt-3 text-[13px] leading-relaxed text-zinc-500">{item.accent}</p>
+                <div className="mt-auto pt-6 border-t border-line flex items-center justify-between">
+                  <div>
+                    <div className="font-display font-semibold text-[15px] tracking-tight">{item.name}</div>
+                    <div className="font-mono text-[11px] tracking-[0.08em] text-zinc-500 mt-0.5">{item.role.toUpperCase()}</div>
                   </div>
-                  <p className="text-lg leading-relaxed text-navy/75">
-                    {item.quote}
-                  </p>
-                  <p className="mt-4 text-sm font-medium text-navy">
-                    {item.accent}
-                  </p>
-                  <footer className="mt-6 flex items-center justify-between gap-3 border-t border-navy/10 pt-4">
-                    <div>
-                      <div className="font-display font-semibold text-lg text-navy-dark">
-                        {item.name}
-                      </div>
-                      <div className="text-sm text-navy-dark/60 mt-1">{item.role}</div>
-                    </div>
-                    <div className="rounded-full border border-navy/10 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-navy">
-                      Trusted
-                    </div>
-                  </footer>
+                  <div className="h-10 w-10 rounded-full bg-muted border border-line flex items-center justify-center font-display font-bold text-sm">
+                    {item.name.charAt(0)}
+                  </div>
                 </div>
               </blockquote>
             </RevealOnScroll>
